@@ -11,7 +11,7 @@
  
 
 
-</style>
+
 
 <span class="psw">Forgot <a href="/users/Forgot">password</a></span>
 <span class="Text1">Frist time at KMITL square </span>
@@ -27,7 +27,7 @@
 
 <script>
 export default {
-  layout: 'session',
+ layout:"Hbar",
   data() {
     return {
       email: '',
@@ -76,7 +76,7 @@ export default {
       width: 50%;
       padding: 7px 15px;
       -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); 
       background-color: rgb(243, 95, 16); 
     }
   span.psw {
@@ -117,9 +117,6 @@ export default {
 
 
 
-<script>
-export default {
-    layout:"LayoutLogin"
-}
-</script>
+
+
 

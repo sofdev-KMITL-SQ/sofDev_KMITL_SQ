@@ -1,0 +1,80 @@
+[
+  {
+    "name": "Carts",
+    "path": "/Carts",
+    "component": "D:\\\\cloneGit\\\\sofDev_KMITL_SQ\\\\pages\\\\Carts\\\\index.vue",
+    "chunkName": "pages/Carts/index"
+  },
+  {
+    "name": "Home",
+    "path": "/Home",
+    "component": "D:\\\\cloneGit\\\\sofDev_KMITL_SQ\\\\pages\\\\Home\\\\index.vue",
+    "chunkName": "pages/Home/index"
+  },
+  {
+    "name": "inspire",
+    "path": "/inspire",
+    "component": "D:\\\\cloneGit\\\\sofDev_KMITL_SQ\\\\pages\\\\inspire.vue",
+    "chunkName": "pages/inspire"
+  },
+  {
+    "name": "Product",
+    "path": "/Product",
+    "component": "D:\\\\cloneGit\\\\sofDev_KMITL_SQ\\\\pages\\\\Product\\\\index.vue",
+    "chunkName": "pages/Product/index"
+  },
+  {
+    "name": "Shop",
+    "path": "/Shop",
+    "component": "D:\\\\cloneGit\\\\sofDev_KMITL_SQ\\\\pages\\\\Shop\\\\index.vue",
+    "chunkName": "pages/Shop/index"
+  },
+  {
+    "name": "users-copy",
+    "path": "/users/copy",
+    "component": "D:\\\\cloneGit\\\\sofDev_KMITL_SQ\\\\pages\\\\users\\\\copy.vue",
+    "chunkName": "pages/users/copy"
+  },
+  {
+    "name": "users-Forgot",
+    "path": "/users/Forgot",
+    "component": "D:\\\\cloneGit\\\\sofDev_KMITL_SQ\\\\pages\\\\users\\\\Forgot.vue",
+    "chunkName": "pages/users/Forgot"
+  },
+  {
+    "name": "users-LogIn",
+    "path": "/users/LogIn",
+    "component": "D:\\\\cloneGit\\\\sofDev_KMITL_SQ\\\\pages\\\\users\\\\LogIn.vue",
+    "chunkName": "pages/users/LogIn"
+  },
+  {
+    "name": "users-Newpass",
+    "path": "/users/Newpass",
+    "component": "D:\\\\cloneGit\\\\sofDev_KMITL_SQ\\\\pages\\\\users\\\\Newpass.vue",
+    "chunkName": "pages/users/Newpass"
+  },
+  {
+    "name": "users-Regis",
+    "path": "/users/Regis",
+    "component": "D:\\\\cloneGit\\\\sofDev_KMITL_SQ\\\\pages\\\\users\\\\Regis.vue",
+    "chunkName": "pages/users/Regis"
+  },
+  {
+    "name": "users-shopping",
+    "path": "/users/shopping",
+    "component": "D:\\\\cloneGit\\\\sofDev_KMITL_SQ\\\\pages\\\\users\\\\shopping.vue",
+    "chunkName": "pages/users/shopping"
+  },
+  {
+    "name": "users-test",
+    "path": "/users/test",
+    "component": "D:\\\\cloneGit\\\\sofDev_KMITL_SQ\\\\pages\\\\users\\\\test.vue",
+    "chunkName": "pages/users/test"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "D:\\\\cloneGit\\\\sofDev_KMITL_SQ\\\\pages\\\\index.vue",
+    "chunkName": "pages/index"
+  }
+]
