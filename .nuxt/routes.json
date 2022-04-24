@@ -28,6 +28,13 @@
     "_name": "_69a1998e"
   },
   {
+    "name": "Shipping",
+    "path": "/Shipping",
+    "component": "D:\\\\cloneGit\\\\sofDev_KMITL_SQ\\\\pages\\\\Shipping\\\\index.vue",
+    "chunkName": "pages/Shipping/index",
+    "_name": "_26e5582e"
+  },
+  {
     "name": "Shop",
     "path": "/Shop",
     "component": "D:\\\\cloneGit\\\\sofDev_KMITL_SQ\\\\pages\\\\Shop\\\\index.vue",

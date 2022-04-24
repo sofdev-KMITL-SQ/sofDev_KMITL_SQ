@@ -8,6 +8,7 @@ const _29a1b76a = () => interopDefault(import('..\\pages\\Carts\\index.vue' /* w
 const _b63f7ad0 = () => interopDefault(import('..\\pages\\Home\\index.vue' /* webpackChunkName: "pages/Home/index" */))
 const _2a7120ff = () => interopDefault(import('..\\pages\\inspire.vue' /* webpackChunkName: "pages/inspire" */))
 const _69a1998e = () => interopDefault(import('..\\pages\\Product\\index.vue' /* webpackChunkName: "pages/Product/index" */))
+const _26e5582e = () => interopDefault(import('..\\pages\\Shipping\\index.vue' /* webpackChunkName: "pages/Shipping/index" */))
 const _f4350fbe = () => interopDefault(import('..\\pages\\Shop\\index.vue' /* webpackChunkName: "pages/Shop/index" */))
 const _ba188dbc = () => interopDefault(import('..\\pages\\users\\copy.vue' /* webpackChunkName: "pages/users/copy" */))
 const _e24d9ea0 = () => interopDefault(import('..\\pages\\users\\Forgot.vue' /* webpackChunkName: "pages/users/Forgot" */))
@@ -45,6 +46,10 @@ export const routerOptions = {
     path: "/Product",
     component: _69a1998e,
     name: "Product"
+  }, {
+    path: "/Shipping",
+    component: _26e5582e,
+    name: "Shipping"
   }, {
     path: "/Shop",
     component: _f4350fbe,
