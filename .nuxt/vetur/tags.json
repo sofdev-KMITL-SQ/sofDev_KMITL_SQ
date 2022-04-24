@@ -11,6 +11,9 @@
   "Layout": {
     "description": "Auto imported from components/Layout.vue"
   },
+  "Line": {
+    "description": "Auto imported from components/Line.vue"
+  },
   "Post": {
     "description": "Auto imported from components/Post.vue"
   },

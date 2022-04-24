@@ -3,78 +3,91 @@
     "name": "Carts",
     "path": "/Carts",
     "component": "D:\\\\cloneGit\\\\sofDev_KMITL_SQ\\\\pages\\\\Carts\\\\index.vue",
-    "chunkName": "pages/Carts/index"
+    "chunkName": "pages/Carts/index",
+    "_name": "_29a1b76a"
   },
   {
     "name": "Home",
     "path": "/Home",
     "component": "D:\\\\cloneGit\\\\sofDev_KMITL_SQ\\\\pages\\\\Home\\\\index.vue",
-    "chunkName": "pages/Home/index"
+    "chunkName": "pages/Home/index",
+    "_name": "_b63f7ad0"
   },
   {
     "name": "inspire",
     "path": "/inspire",
     "component": "D:\\\\cloneGit\\\\sofDev_KMITL_SQ\\\\pages\\\\inspire.vue",
-    "chunkName": "pages/inspire"
+    "chunkName": "pages/inspire",
+    "_name": "_2a7120ff"
   },
   {
     "name": "Product",
     "path": "/Product",
     "component": "D:\\\\cloneGit\\\\sofDev_KMITL_SQ\\\\pages\\\\Product\\\\index.vue",
-    "chunkName": "pages/Product/index"
+    "chunkName": "pages/Product/index",
+    "_name": "_69a1998e"
   },
   {
     "name": "Shop",
     "path": "/Shop",
     "component": "D:\\\\cloneGit\\\\sofDev_KMITL_SQ\\\\pages\\\\Shop\\\\index.vue",
-    "chunkName": "pages/Shop/index"
+    "chunkName": "pages/Shop/index",
+    "_name": "_f4350fbe"
   },
   {
     "name": "users-copy",
     "path": "/users/copy",
     "component": "D:\\\\cloneGit\\\\sofDev_KMITL_SQ\\\\pages\\\\users\\\\copy.vue",
-    "chunkName": "pages/users/copy"
+    "chunkName": "pages/users/copy",
+    "_name": "_ba188dbc"
   },
   {
     "name": "users-Forgot",
     "path": "/users/Forgot",
     "component": "D:\\\\cloneGit\\\\sofDev_KMITL_SQ\\\\pages\\\\users\\\\Forgot.vue",
-    "chunkName": "pages/users/Forgot"
+    "chunkName": "pages/users/Forgot",
+    "_name": "_e24d9ea0"
   },
   {
     "name": "users-LogIn",
     "path": "/users/LogIn",
     "component": "D:\\\\cloneGit\\\\sofDev_KMITL_SQ\\\\pages\\\\users\\\\LogIn.vue",
-    "chunkName": "pages/users/LogIn"
+    "chunkName": "pages/users/LogIn",
+    "_name": "_3ec1ea8c"
   },
   {
     "name": "users-Newpass",
     "path": "/users/Newpass",
     "component": "D:\\\\cloneGit\\\\sofDev_KMITL_SQ\\\\pages\\\\users\\\\Newpass.vue",
-    "chunkName": "pages/users/Newpass"
+    "chunkName": "pages/users/Newpass",
+    "_name": "_123459f4"
   },
   {
     "name": "users-Regis",
     "path": "/users/Regis",
     "component": "D:\\\\cloneGit\\\\sofDev_KMITL_SQ\\\\pages\\\\users\\\\Regis.vue",
-    "chunkName": "pages/users/Regis"
+    "chunkName": "pages/users/Regis",
+    "_name": "_3f1b657e"
   },
   {
     "name": "users-shopping",
     "path": "/users/shopping",
     "component": "D:\\\\cloneGit\\\\sofDev_KMITL_SQ\\\\pages\\\\users\\\\shopping.vue",
-    "chunkName": "pages/users/shopping"
+    "chunkName": "pages/users/shopping",
+    "_name": "_6d13f715"
   },
   {
     "name": "users-test",
     "path": "/users/test",
     "component": "D:\\\\cloneGit\\\\sofDev_KMITL_SQ\\\\pages\\\\users\\\\test.vue",
-    "chunkName": "pages/users/test"
+    "chunkName": "pages/users/test",
+    "_name": "_7cc177bf"
   },
   {
     "name": "index",
     "path": "/",
     "component": "D:\\\\cloneGit\\\\sofDev_KMITL_SQ\\\\pages\\\\index.vue",
-    "chunkName": "pages/index"
+    "chunkName": "pages/index",
+    "_name": "_4392da37"
   }
 ]

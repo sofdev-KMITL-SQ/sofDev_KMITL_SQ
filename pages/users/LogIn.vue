@@ -1,22 +1,20 @@
 <template lang="html">
 <div class="center">
-  <button type="button" class="cancelbtn"><h3 style="color:white">Login</h3></button>
-    <v-text-field v-model="email" label="Email"></v-text-field>
-    <v-text-field
-      v-model="password"
-      label="Password"
-      type="password"
-    ></v-text-field>
-    <!-- <v-btn  @click="handleLoginClicked"> Login</v-btn> -->
- 
+  
+<form action="/action_page.php">
+<button type="submit" value="Submit" class="cancelbtn"><h3 style="color:white">Login</h3></button>
+   
+  <v-text-field v-model="Email" label="Email" placeholder="ex: 6x0xxxxx@kmitl.ac.th" type="text" pattern="[6]{1}[0-4]{1}[0]{1}[1-9]{1}[0-9]{4}@kmitl\.ac\.th" required></v-text-field>
+ <v-text-field v-model="password" label="Password" type="text" placeholder="Between 8 -  20 Characters" id="password" minlength="8" maxlength="20" required><br><br></v-text-field>
 
 
+<div class="box Hog" type="submit"><h1 style="color:white">Login</h1></div>
+ </form>
 
 
 <span class="psw">Forgot <a href="/users/Forgot">password</a></span>
 <span class="Text1">Frist time at KMITL square </span>
 <span class="Regis"> <a href="/users/Regis">Resgister here</a></span>
-<div class="box Hog"><h1 style="color:white">Login</h1></div>
 
   </div>
 
