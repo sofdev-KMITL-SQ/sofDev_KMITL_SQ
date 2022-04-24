@@ -13,13 +13,14 @@
 </form> -->
 <!-- [6]{1}[0-4]{1}[0]{1}[1-9]{1}[0-9]{4} -->
 <form action="/action_page.php">
-   <v-text-field v-model="Email" label="Email" type="text" pattern="[6]{1}[0-4]{1}[0]{1}[1-9]{1}[0-9]{4}@(kmitl|KMITL)\.(ac|AC)\.(th|TH)" required></v-text-field>
- <v-text-field v-model="password" label="Password" type="password" id="password" minlength="8" maxlength="20" required><br><br></v-text-field>
- <v-text-field v-model="comfirm_password" label="Comfirm Password" type="password" id="Cpassword"minlength="8" maxlength="20" pattern=".{8,}" required><br><br></v-text-field>
-<v-text-field v-model="name" label="Name" type="text" id="username" minlength="2" maxlength="20" required><br><br></v-text-field>
- <v-text-field v-model="surname" label="Surname" type="text" id="usersurname" minlength="2" maxlength="20" required><br><br> </v-text-field>
-    <v-text-field v-model="phone_num" label="Telephone number" type="tel" id="phone" maxlength="10" pattern="[0]{1}[0-9]{9}" required><br><br> </v-text-field>
-    <v-text-field v-model="address" label="Address" ></v-text-field>
+   <!-- <v-text-field v-model="Email" label="Email" placeholder="ex: 6x0xxxxx" type="text" pattern="[6]{1}[0-4]{1}[0]{1}[1-9]{1}[0-9]{4}@(kmitl|KMITL)\.(ac|AC)\.(th|TH)" required></v-text-field> -->
+  <v-text-field v-model="Email" label="Email" placeholder="ex: 6x0xxxxx@kmitl.ac.th" type="text" pattern="[6]{1}[0-4]{1}[0]{1}[1-9]{1}[0-9]{4}@kmitl\.ac\.th" required></v-text-field>
+ <v-text-field v-model="password" label="Password" type="text" placeholder="Between 8 -  20 Characters" id="password" minlength="8" maxlength="20" required><br><br></v-text-field>
+ <v-text-field v-model="comfirm_password" label="Comfirm text" type="password" id="Cpassword"minlength="8" maxlength="20" pattern=".{8,}" required><br><br></v-text-field>
+ <v-text-field v-model="name" label="Name" type="text" placeholder="Between 2 -20 Characters" id="username"  minlength="2" maxlength="20" required><br><br></v-text-field>
+ <v-text-field v-model="surname" label="Surname" type="text" placeholder="Between 2 - 20 Characters" id="usersurname" minlength="2" maxlength="20" required><br><br> </v-text-field>
+<v-text-field v-model="phone_num" label="Telephone number" placeholder="ex: 0xxxxxxxxx" type="text" id="phone"  @input="up" maxlength="10" pattern="[0]{1}[0-9]{9}" required><br><br> </v-text-field>
+    <!-- <v-text-field v-model="address" label="Address" type="text"></v-text-field> -->
 
   <input type="submit" value="Submit">
 </form>
@@ -92,19 +93,19 @@ methods: {
   padding: 20px;
   padding-top: 10px;
   padding-bottom: 30px;
-  background-color: rgba(50, 134, 194, 0.626);
+  background-color: rgba(99, 99, 100, 0.478);
 }
   
   .Box2 {
   position: absolute;
-  margin-top: -504px;
+  margin-top: -453px;
   right: 30px;
   width: 50%;
   border: 4px solid rgb(243, 95, 16);
   padding: 20px;
-  padding-top: 350px;
+  padding-top: 273px;
   padding-bottom: 40px;
-  background-color: rgba(50, 134, 194, 0.626);
+  background-color: rgba(99, 99, 100, 0.478);
 }
 
 
