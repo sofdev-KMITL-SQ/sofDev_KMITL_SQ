@@ -1,22 +1,10 @@
 
 <template lang="html">
 <div class="Box1">
- 
-  <!-- <form action="/action_page.php">
-   <v-text-field v-model="email" label="Email"></v-text-field>
-    <v-text-field v-model="password" label="Password" ></v-text-field>
-    <v-text-field v-model="comfirm_password" label="Comfirm Password" ></v-text-field>
-    <v-text-field v-model="name" label="Name" ></v-text-field>
-    <v-text-field v-model="surname" label="Surname" ></v-text-field>
-    <v-text-field v-model="phone_num" label="Telephone number"></v-text-field>
-    <v-text-field v-model="address" label="Address" ></v-text-field>
-
-</form> -->
-<!-- [6]{1}[0-4]{1}[0]{1}[1-9]{1}[0-9]{4} -->
 <form action="/action_page.php">
    <!-- <v-text-field v-model="Email" label="Email" placeholder="ex: 6x0xxxxx" type="text" pattern="[6]{1}[0-4]{1}[0]{1}[1-9]{1}[0-9]{4}@(kmitl|KMITL)\.(ac|AC)\.(th|TH)" required></v-text-field> -->
   <v-text-field v-model="Email" label="Email" placeholder="ex: 6x0xxxxx@kmitl.ac.th" type="text" pattern="[6]{1}[0-4]{1}[0]{1}[1-9]{1}[0-9]{4}@kmitl\.ac\.th" required></v-text-field>
- <v-text-field v-model="password" label="Password" type="text" placeholder="Between 8 -  20 Characters" id="password" minlength="8" maxlength="20" required><br><br></v-text-field>
+ <v-text-field v-model="password" label="Password" type="text" placeholder="Between 8 -  20 Characters" id="password" minlength="8" maxlength="20"  required><br><br></v-text-field>
  <v-text-field v-model="comfirm_password" label="Comfirm text" type="password" id="Cpassword"minlength="8" maxlength="20" pattern=".{8,}" required><br><br></v-text-field>
  <v-text-field v-model="name" label="Name" type="text" placeholder="Between 2 -20 Characters" id="username"  minlength="2" maxlength="20" required><br><br></v-text-field>
  <v-text-field v-model="surname" label="Surname" type="text" placeholder="Between 2 - 20 Characters" id="usersurname" minlength="2" maxlength="20" required><br><br> </v-text-field>
@@ -29,10 +17,7 @@
 <div class="Box2">
    <v-text-field v-model="about" label="About me"></v-text-field>
   <v-text-field v-model="interest" label="Interesting in..."></v-text-field>
-<!-- <form action="/action_page.php">
-  <input type="file" id="myFile" name="filename">
-  <input type="submit">
-</form> -->
+
 <input type="file" @change="onFileSelected">
 <button>Upload</button>
 
@@ -48,7 +33,7 @@ export default {
  layout:"Hbar",
  data() {
    return{
-     email: '',
+     Email: '',
      password: '',
      comfirm_password: '',
      name: '',

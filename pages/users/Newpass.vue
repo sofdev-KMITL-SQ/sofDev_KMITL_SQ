@@ -18,10 +18,9 @@ export default {
    layout:"Hbar",
   data() {
     return {
-      email: '',
+      Email: '',
       password: '',
       Newpassword: ''
-
     }
   },
   methods: {
@@ -41,13 +40,12 @@ export default {
   padding-top: 50px;
   padding-bottom: 100px;
       text-align: center;
-
 }
   .cancelbtn {
       margin: 0;
       position: absolute;
       text-align: center;
-      top: 370px;
+      top: 600px;
       left: 50%;
       width: 50%;
       padding: 7px 15px;
@@ -55,7 +53,4 @@ export default {
       transform: translate(-50%, -50%);
       background-color: rgb(243, 95, 16); 
     }
-
 </style>
-
-
