@@ -2,99 +2,99 @@
   {
     "name": "Carts",
     "path": "/Carts",
-    "component": "D:\\\\cloneGit\\\\sofDev_KMITL_SQ\\\\pages\\\\Carts\\\\index.vue",
+    "component": "C:\\\\Users\\\\Bravo\\\\Desktop\\\\SofDev\\\\kmitlNuxtJS\\\\Isreal\\\\v1\\\\sofDev_KMITL_SQ\\\\pages\\\\Carts\\\\index.vue",
     "chunkName": "pages/Carts/index",
-    "_name": "_29a1b76a"
+    "_name": "_0d669ebf"
   },
   {
     "name": "Home",
     "path": "/Home",
-    "component": "D:\\\\cloneGit\\\\sofDev_KMITL_SQ\\\\pages\\\\Home\\\\index.vue",
+    "component": "C:\\\\Users\\\\Bravo\\\\Desktop\\\\SofDev\\\\kmitlNuxtJS\\\\Isreal\\\\v1\\\\sofDev_KMITL_SQ\\\\pages\\\\Home\\\\index.vue",
     "chunkName": "pages/Home/index",
-    "_name": "_b63f7ad0"
+    "_name": "_61e69ca3"
   },
   {
     "name": "inspire",
     "path": "/inspire",
-    "component": "D:\\\\cloneGit\\\\sofDev_KMITL_SQ\\\\pages\\\\inspire.vue",
+    "component": "C:\\\\Users\\\\Bravo\\\\Desktop\\\\SofDev\\\\kmitlNuxtJS\\\\Isreal\\\\v1\\\\sofDev_KMITL_SQ\\\\pages\\\\inspire.vue",
     "chunkName": "pages/inspire",
-    "_name": "_2a7120ff"
+    "_name": "_95978eec"
   },
   {
     "name": "Product",
     "path": "/Product",
-    "component": "D:\\\\cloneGit\\\\sofDev_KMITL_SQ\\\\pages\\\\Product\\\\index.vue",
+    "component": "C:\\\\Users\\\\Bravo\\\\Desktop\\\\SofDev\\\\kmitlNuxtJS\\\\Isreal\\\\v1\\\\sofDev_KMITL_SQ\\\\pages\\\\Product\\\\index.vue",
     "chunkName": "pages/Product/index",
-    "_name": "_69a1998e"
+    "_name": "_6fc9ffa3"
   },
   {
     "name": "Shipping",
     "path": "/Shipping",
-    "component": "D:\\\\cloneGit\\\\sofDev_KMITL_SQ\\\\pages\\\\Shipping\\\\index.vue",
+    "component": "C:\\\\Users\\\\Bravo\\\\Desktop\\\\SofDev\\\\kmitlNuxtJS\\\\Isreal\\\\v1\\\\sofDev_KMITL_SQ\\\\pages\\\\Shipping\\\\index.vue",
     "chunkName": "pages/Shipping/index",
-    "_name": "_26e5582e"
+    "_name": "_a91c9f18"
   },
   {
     "name": "Shop",
     "path": "/Shop",
-    "component": "D:\\\\cloneGit\\\\sofDev_KMITL_SQ\\\\pages\\\\Shop\\\\index.vue",
+    "component": "C:\\\\Users\\\\Bravo\\\\Desktop\\\\SofDev\\\\kmitlNuxtJS\\\\Isreal\\\\v1\\\\sofDev_KMITL_SQ\\\\pages\\\\Shop\\\\index.vue",
     "chunkName": "pages/Shop/index",
-    "_name": "_f4350fbe"
+    "_name": "_42ebd22c"
   },
   {
     "name": "users-copy",
     "path": "/users/copy",
-    "component": "D:\\\\cloneGit\\\\sofDev_KMITL_SQ\\\\pages\\\\users\\\\copy.vue",
+    "component": "C:\\\\Users\\\\Bravo\\\\Desktop\\\\SofDev\\\\kmitlNuxtJS\\\\Isreal\\\\v1\\\\sofDev_KMITL_SQ\\\\pages\\\\users\\\\copy.vue",
     "chunkName": "pages/users/copy",
-    "_name": "_ba188dbc"
+    "_name": "_5ffa132d"
   },
   {
     "name": "users-Forgot",
     "path": "/users/Forgot",
-    "component": "D:\\\\cloneGit\\\\sofDev_KMITL_SQ\\\\pages\\\\users\\\\Forgot.vue",
+    "component": "C:\\\\Users\\\\Bravo\\\\Desktop\\\\SofDev\\\\kmitlNuxtJS\\\\Isreal\\\\v1\\\\sofDev_KMITL_SQ\\\\pages\\\\users\\\\Forgot.vue",
     "chunkName": "pages/users/Forgot",
-    "_name": "_e24d9ea0"
+    "_name": "_23b133fb"
   },
   {
     "name": "users-LogIn",
     "path": "/users/LogIn",
-    "component": "D:\\\\cloneGit\\\\sofDev_KMITL_SQ\\\\pages\\\\users\\\\LogIn.vue",
+    "component": "C:\\\\Users\\\\Bravo\\\\Desktop\\\\SofDev\\\\kmitlNuxtJS\\\\Isreal\\\\v1\\\\sofDev_KMITL_SQ\\\\pages\\\\users\\\\LogIn.vue",
     "chunkName": "pages/users/LogIn",
-    "_name": "_3ec1ea8c"
+    "_name": "_2286d1e1"
   },
   {
     "name": "users-Newpass",
     "path": "/users/Newpass",
-    "component": "D:\\\\cloneGit\\\\sofDev_KMITL_SQ\\\\pages\\\\users\\\\Newpass.vue",
+    "component": "C:\\\\Users\\\\Bravo\\\\Desktop\\\\SofDev\\\\kmitlNuxtJS\\\\Isreal\\\\v1\\\\sofDev_KMITL_SQ\\\\pages\\\\users\\\\Newpass.vue",
     "chunkName": "pages/users/Newpass",
-    "_name": "_123459f4"
+    "_name": "_185cc009"
   },
   {
     "name": "users-Regis",
     "path": "/users/Regis",
-    "component": "D:\\\\cloneGit\\\\sofDev_KMITL_SQ\\\\pages\\\\users\\\\Regis.vue",
+    "component": "C:\\\\Users\\\\Bravo\\\\Desktop\\\\SofDev\\\\kmitlNuxtJS\\\\Isreal\\\\v1\\\\sofDev_KMITL_SQ\\\\pages\\\\users\\\\Regis.vue",
     "chunkName": "pages/users/Regis",
-    "_name": "_3f1b657e"
+    "_name": "_779196d4"
   },
   {
     "name": "users-shopping",
     "path": "/users/shopping",
-    "component": "D:\\\\cloneGit\\\\sofDev_KMITL_SQ\\\\pages\\\\users\\\\shopping.vue",
+    "component": "C:\\\\Users\\\\Bravo\\\\Desktop\\\\SofDev\\\\kmitlNuxtJS\\\\Isreal\\\\v1\\\\sofDev_KMITL_SQ\\\\pages\\\\users\\\\shopping.vue",
     "chunkName": "pages/users/shopping",
-    "_name": "_6d13f715"
+    "_name": "_2bf853a0"
   },
   {
     "name": "users-test",
     "path": "/users/test",
-    "component": "D:\\\\cloneGit\\\\sofDev_KMITL_SQ\\\\pages\\\\users\\\\test.vue",
+    "component": "C:\\\\Users\\\\Bravo\\\\Desktop\\\\SofDev\\\\kmitlNuxtJS\\\\Isreal\\\\v1\\\\sofDev_KMITL_SQ\\\\pages\\\\users\\\\test.vue",
     "chunkName": "pages/users/test",
-    "_name": "_7cc177bf"
+    "_name": "_39c7d1ca"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "D:\\\\cloneGit\\\\sofDev_KMITL_SQ\\\\pages\\\\index.vue",
+    "component": "C:\\\\Users\\\\Bravo\\\\Desktop\\\\SofDev\\\\kmitlNuxtJS\\\\Isreal\\\\v1\\\\sofDev_KMITL_SQ\\\\pages\\\\index.vue",
     "chunkName": "pages/index",
-    "_name": "_4392da37"
+    "_name": "_1a874efc"
   }
 ]

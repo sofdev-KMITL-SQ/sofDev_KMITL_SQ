@@ -14,11 +14,17 @@
   "Line": {
     "description": "Auto imported from components/Line.vue"
   },
+  "Paying": {
+    "description": "Auto imported from components/Paying.vue"
+  },
   "Post": {
     "description": "Auto imported from components/Post.vue"
   },
   "Product": {
     "description": "Auto imported from components/Product.vue"
+  },
+  "Shipping": {
+    "description": "Auto imported from components/Shipping.vue"
   },
   "Shop": {
     "description": "Auto imported from components/Shop.vue"
