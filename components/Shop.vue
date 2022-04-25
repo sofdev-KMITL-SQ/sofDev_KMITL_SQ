@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <v-container  fluid="sm" >
     <v-container>
       <div class="row">
         <div
@@ -126,7 +126,7 @@
         </div>
       </div>
     </v-container>
-  </div>
+  </v-container>
 </template>
 <style>
   .v-card--reveal {

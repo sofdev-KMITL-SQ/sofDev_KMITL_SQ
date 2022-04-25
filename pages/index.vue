@@ -1,19 +1,39 @@
 <template>
   <div class="container links">
     <v-container>
-      <v-btn color="primary" elevation="2" large>
-        <nuxt-link to="/users/LogIn" class="btn btn-success" align="center"
-          >Login</nuxt-link
-        ></v-btn
+      <v-btn
+        color="warning"
+        dark
+        href="/users/LogIn"
+        align="center"
+        elevation="2"
+        large
       >
+        Login
+      </v-btn>
 
-       <v-btn color="primary" elevation="2" large>
-        <nuxt-link to="/Home" class="btn btn-success" align="center"
-          >Home</nuxt-link
-        ></v-btn
+       <div class="my-2">
+            <v-btn
+              class="btn btn-warning"
+            >
+              Extra small Button
+            </v-btn>
+          </div>
+<div>
+
+
+
+</div>
+      <v-btn
+        color="success"
+        dark
+        href="/home"
+        align="center"
+        elevation="2"
+        large
       >
-
-      
+        Home
+      </v-btn>
     </v-container>
   </div>
 </template>

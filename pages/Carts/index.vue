@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div  class=" pt-10 mt-12">
         <Carts/>
     </div>
 </template>

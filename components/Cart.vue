@@ -1,7 +1,7 @@
 <template>
-  <div class="" style="background-color: white">
-    <v-container>
-      <p class="display-3 font-weight-light text-center pa-4">SHOPPING CART</p>
+  <v-container  fluid="sm" class="" style="background-color: white">
+    <v-container >
+      <p class="display-3  black--text font-weight-light  text-center pa-4">SHOPPING CART</p>
       <v-row>
         <v-col :cols="12" md="9" sm="12">
           <v-simple-table>
@@ -16,7 +16,8 @@
                 </tr>
               </thead>
               <tbody>
-                <tr>
+               <tr>
+
                   <td>
                   <!-- Item 1 -->
                     <v-list-item key="1" @click="none">
@@ -48,8 +49,11 @@
                   <td>฿ รวม99.99</td>
                   <td><a>X</a></td>
                 </tr>
+               
+               
                 <tr>
                   <td>
+                           <!-- Item 2 -->
                     <v-list-item key="1" @click="none">
                       <v-list-item-avatar>
                         <v-img
@@ -169,7 +173,7 @@
         </v-row>
       </v-container>
     </v-card>
-  </div>
+  </v-container>
 </template>
 <script>
 export default {
