@@ -1,28 +1,33 @@
 <template>
-  <v-container>
-   <p class="display-2 black--text font-weight-light text-center pa-5">
-        ช่องทางการชำระเงิน
-      </p>
+  <v-container fluid="sm" style="background-color: white">
+    <p class="display-2 black--text font-weight-light text-center pa-5">
+      ช่องทางการชำระเงิน
+    </p>
     <v-card color="grey" class="ma-3">
       <v-col :cols="12" sm="12">
         <tr>
           <v-icon color="black" class="display-2">mdi-bank</v-icon>
 
           <td class="text-right pa-2">
-            <v-checkbox
-              href=""
+            <v-btn
+          
+              @click="overlay = !overlay"
               align="center"
-              class="rounded pt-5 ma-5"
+           class="ml-4"
+             href="/home"
               style="background-color: #121235"
+               elevation="2"
               v-model="selected"
               label="เก็บเงินปลายทาง"
               value="เก็บเงินปลายทาง"
-            ></v-checkbox>
+            >เก็บเงินปลายทาง</v-btn>
 
             <v-btn
+              @click="overlay = !overlay"
+              href="/home"
+
               class="ml-4"
               color="green"
-              href="/home"
               align="center"
               elevation="2"
               large
@@ -30,9 +35,11 @@
               K-BANK
             </v-btn>
             <v-btn
+              @click="overlay = !overlay"
+              href="/home"
+
               class="ml-4"
               color="blue"
-              href="/home"
               align="center"
               elevation="2"
               large
@@ -41,9 +48,10 @@
             </v-btn>
 
             <v-btn
+              @click="overlay = !overlay;"
+              href="/home"
               class="brown--text ml-4"
               color="yellow"
-              href="/home"
               align="center"
               elevation="2"
               large
@@ -54,5 +62,51 @@
         </tr>
       </v-col>
     </v-card>
+
+
+    <div class="text-center">
+
+      <v-overlay :value="overlay">  <h1 class="green--text" >ชำระเงินเสร็จสิ้น!!<v-icon  color="green">mdi-checkbox-marked-circle</v-icon></h1>
+      <h3>กำลังกลับไปยังหน้าเริ่มต้น</h3>
+        <v-progress-circular indeterminate size="64"> 
+        
+      
+        
+        </v-progress-circular>
+      </v-overlay>
+    </div>
   </v-container>
 </template>
+
+
+<script>
+export default {
+  data() {
+    return {
+      snackbar: false,
+      overlay: false,
+      zIndex: 0,
+    };
+  },
+  methods: {
+    submit() {
+      this.snackbar = true;
+      this.overlay = !overlay;
+      
+    },
+    
+  },
+      watch: {
+      overlay (val) {
+        val && setTimeout(() => {
+         
+          this.overlay = false
+          
+        }, 3000)
+      },
+    },
+
+    
+};
+
+</script>

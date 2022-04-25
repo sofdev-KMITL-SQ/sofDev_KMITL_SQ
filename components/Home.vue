@@ -52,7 +52,7 @@
             outlined
             icon
             class="btn btn-primary rounded-circle"
-            href="/cart"
+            href="/Shop"
           >
             <v-img
               class="products-Types"
@@ -71,7 +71,7 @@
               outlined
             icon
             class="btn btn-primary rounded-circle"
-            href="/cart"
+            href="/Shop"
           >
             <v-img
               class="products-Types"
@@ -90,7 +90,7 @@
               outlined
             icon
             class="btn btn-primary rounded-circle"
-            href="/cart"
+            href="/Shop"
           >
             <v-img
               class="products-Types"
@@ -109,7 +109,7 @@
               outlined
             icon
             class="btn btn-primary rounded-circle"
-            href="/cart"
+            href="/Shop"
           >
             <v-img
               class="products-Types"
@@ -128,7 +128,7 @@
               outlined
             icon
             class="btn btn-primary rounded-circle"
-            href="/cart"
+            href="/Shop"
           >
             <v-img
               class="products-Types"
@@ -147,7 +147,7 @@
               outlined
             icon
             class="btn btn-primary rounded-circle"
-            href="/cart"
+            href="/Shop"
           >
             <v-img
               class="products-Types"
@@ -166,7 +166,7 @@
               outlined
             icon
             class="btn btn-primary rounded-circle"
-            href="/cart"
+            href="/Shop"
           >
             <v-img
               class="products-Types"

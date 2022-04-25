@@ -45,12 +45,14 @@
               </v-col>
             </v-row>
             <v-divider></v-divider>
-            <v-card-title class="pb-0">Customer Rating</v-card-title>
+            <v-card-title class="pb-0">Products Rating</v-card-title>
             <v-container class="pt-0"  fluid>
-              <v-checkbox append-icon="mdi-star" label="4 & above" hide-details dense></v-checkbox>
-              <v-checkbox append-icon="mdi-star" label="3 & above" hide-details dense></v-checkbox>
-              <v-checkbox append-icon="mdi-star" label="2 & above" hide-details dense></v-checkbox>
-              <v-checkbox append-icon="mdi-star" label="1 & above" hide-details dense></v-checkbox>
+              <v-checkbox append-icon="mdi-star " label="5" hide-details dense></v-checkbox>
+              <v-checkbox append-icon="mdi-star" label="4" hide-details dense></v-checkbox>
+              <v-checkbox append-icon="mdi-star" label="3" hide-details dense></v-checkbox>
+              <v-checkbox append-icon="mdi-star" label="2" hide-details dense></v-checkbox>
+              <v-checkbox append-icon="mdi-star" label="1" hide-details dense></v-checkbox>
+
             </v-container>
             <v-divider></v-divider>
             <v-card-title class="pb-0">Size</v-card-title>
