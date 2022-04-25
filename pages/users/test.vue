@@ -21,7 +21,7 @@ export default {
     },
     
 async asyncData({$axios,}){
- const data = await $axios.$get('https://pokeapi.co/api/v2/pokemon/ditto')
+ const data = await $axios.$get('http://localhost:3300/api/user/me')
  const name =data.game_indices[1].version.name
  return {name}
 

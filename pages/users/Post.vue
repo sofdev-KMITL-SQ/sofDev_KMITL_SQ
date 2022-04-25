@@ -1,17 +1,17 @@
-s<template>
+<template>
   <div>
     <form @submit.prevent="createPost">
       <div>
-        <label for="userEmail">Post User ID</label>
-        <input type="text" id="userEmail" v-model="formData.userEmail" />
+        <label for="userId">Post User ID</label>
+        <input type="text" id="userId" v-model="formData.userId" />
       </div>
       <div>
-        <label for="userPassword">Post Title</label>
-        <input type="text" id="userPassword" v-model="formData.userPassword" />
+        <label for="title">Post Title</label>
+        <input type="text" id="title" v-model="formData.title" />
       </div>
       <!-- <div>
         <label for="body">Post Body</label>
-        <input type="text" id="userSurname" v-model="formData.body" />
+        <input type="text" id="body" v-model="formData.body" />
       </div> -->
       <button>Create Post</button>
     </form>
@@ -25,8 +25,8 @@ export default {
   data() {
     return {
       formData: {
-        userEmail: '',
-        userPassword: '',
+        userId: '',
+        title: '',
         // body: '',
       },
     }
@@ -34,7 +34,7 @@ export default {
   methods: {
     createPost() {
       axios
-        .post('http://localhost:3300/api/user/login', this.formData)
+        .post('https://jsonplaceholder.typicode.com/posts', this.formData)
         .then((response) => {
           console.log(response)
         })
