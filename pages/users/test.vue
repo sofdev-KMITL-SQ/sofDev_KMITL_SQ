@@ -1,7 +1,7 @@
 <template>
-    <h1>Hello {{name}} {{name}}  </h1>
+    <!-- <h1>Hello {{name}} {{name}}  </h1> -->
     <!-- <button type="summit"> Hello</button> -->
-
+ <h1>Hello</h1>
 
     <!-- <h1></h1> -->
 </template>
@@ -17,6 +17,7 @@ export default {
         //     return {name}
         // },
 
+
     },
     
 async asyncData({$axios,}){
@@ -25,7 +26,6 @@ async asyncData({$axios,}){
  return {name}
 
 }
-
 }
 
 </script>
