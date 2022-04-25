@@ -3,8 +3,10 @@ export { default as Cart } from '../..\\components\\Cart.vue'
 export { default as Home } from '../..\\components\\Home.vue'
 export { default as Layout } from '../..\\components\\Layout.vue'
 export { default as Line } from '../..\\components\\Line.vue'
+export { default as Paying } from '../..\\components\\Paying.vue'
 export { default as Post } from '../..\\components\\Post.vue'
 export { default as Product } from '../..\\components\\Product.vue'
+export { default as Shipping } from '../..\\components\\Shipping.vue'
 export { default as Shop } from '../..\\components\\Shop.vue'
 
 // nuxt/nuxt.js#8607

@@ -116,13 +116,14 @@
           </v-simple-table>
           <div class="text-center">
             <v-btn
+              href="/Shipping"
               class="ma-2"
               :loading="loading2"
               :disabled="loading2"
               color="success"
               @click="loader = 'loading2'"
             >
-              PROCEED TO PAY
+              PROCEED TO PAY&SHIPPING 
               <template v-slot:loader>
                 <span>Loading...</span>
               </template>
