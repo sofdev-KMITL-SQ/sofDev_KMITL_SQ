@@ -10,6 +10,7 @@ You can directly use them in pages and other components without the need to impo
 - `<Cart>` | `<cart>` (components/Cart.vue)
 - `<Home>` | `<home>` (components/Home.vue)
 - `<Layout>` | `<layout>` (components/Layout.vue)
+- `<Line>` | `<line>` (components/Line.vue)
 - `<Post>` | `<post>` (components/Post.vue)
 - `<Product>` | `<product>` (components/Product.vue)
 - `<Shop>` | `<shop>` (components/Shop.vue)

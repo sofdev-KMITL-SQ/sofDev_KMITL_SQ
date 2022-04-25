@@ -1,6 +1,7 @@
 
 <template lang="html">
 <div class="Box1">
+ 
   <!-- <form action="/action_page.php">
    <v-text-field v-model="email" label="Email"></v-text-field>
     <v-text-field v-model="password" label="Password" ></v-text-field>
@@ -21,8 +22,8 @@
  <v-text-field v-model="surname" label="Surname" type="text" placeholder="Between 2 - 20 Characters" id="usersurname" minlength="2" maxlength="20" required><br><br> </v-text-field>
 <v-text-field v-model="phone_num" label="Telephone number" placeholder="ex: 0xxxxxxxxx" type="text" id="phone"  @input="up" maxlength="10" pattern="[0]{1}[0-9]{9}" required><br><br> </v-text-field>
     <!-- <v-text-field v-model="address" label="Address" type="text"></v-text-field> -->
-
-  <input type="submit" value="Submit">
+ <button type="submit" value="Submit" class="subBT"><h3 style="color:white">Submit</h3></button>
+  
 </form>
 
 <div class="Box2">
@@ -98,17 +99,28 @@ methods: {
   
   .Box2 {
   position: absolute;
-  margin-top: -453px;
+  margin-top: -435px;
   right: 30px;
   width: 50%;
   border: 4px solid rgb(243, 95, 16);
   padding: 20px;
-  padding-top: 273px;
-  padding-bottom: 40px;
+  padding-top: 258px;
+  padding-bottom: 30px;
   background-color: rgba(99, 99, 100, 0.478);
 }
 
+ .subBT {
 
+      margin: 0;
+      position: absolute;
+      bottom: 3%;
+      left: 50%;
+      width: 50%;
+      padding: 7px 15px;
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); 
+      background-color: rgb(243, 95, 16); 
+    }
 
 
 </style>

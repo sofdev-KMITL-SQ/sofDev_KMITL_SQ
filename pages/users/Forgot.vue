@@ -1,8 +1,10 @@
 <template lang="html">
 <div class="center">
+  <form action="/users/Newpass">
   <h1 style="color:rgb(243, 95, 16)">Reset Password</h1>
- <nuxt-link button @click="" to ="/users/Newpass"class="nextBt"><h3 style="color:white">Next</h3></button></nuxt-link>
-    <v-text-field v-model="email" label="Email" ></v-text-field> 
+ <button type="submit" value="Submit" class="nextBt"><h3 style="color:white">Next</h3></button>
+    <v-text-field v-model="Email" label="Email" placeholder="ex: 6x0xxxxx@kmitl.ac.th" type="text" pattern="[6]{1}[0-4]{1}[0]{1}[1-9]{1}[0-9]{4}@kmitl\.ac\.th" required></v-text-field> 
+</form>
 
 
 </style>
