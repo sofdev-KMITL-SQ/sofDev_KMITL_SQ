@@ -150,7 +150,7 @@ export default {
 .Box1 {
   margin-top: 150px;
   margin-left: 50px;
-  width: 30%;
+  width: 35%;
   border: 4px solid rgb(243, 95, 16);
   padding: 20px;
   padding-top: 10px;
@@ -160,7 +160,7 @@ export default {
 
 .Box2 {
   position: absolute;
-  margin-top: -435px;
+  margin-top: -224px;
   right: 30px;
   width: 50%;
   border: 4px solid rgb(243, 95, 16);
