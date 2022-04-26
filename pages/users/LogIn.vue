@@ -1,20 +1,23 @@
 <template lang="html">
 <div class="center">
-  
-<form @submit.prevent="createPost" action="/Home" >
-<button type="submit"  value="Submit" class="cancelbtn"><h3 style="color:white">Login</h3></button>
-   
+   <!-- {{res.token}} -->
+<form @submit.prevent="createPost">
+<button type="submit"  value="Submit" class="cancelbtn" ><h3 style="color:white">Login</h3></button>
   <!-- <v-text-field v-model="userEmail" label="Email" placeholder="ex: 6x0xxxxx@kmitl.ac.th" type="text" pattern="[6]{1}[0-4]{1}[0]{1}[1-9]{1}[0-9]{4}@kmitl\.ac\.th" required></v-text-field>
  <v-text-field v-model="userPassword" label="Password" type="text" placeholder="Between 8 -  20 Characters" id="password" minlength="8" maxlength="20" required><br><br></v-text-field> -->
 <v-text-field input v-model="formData.userEmail" label="Email" placeholder="ex: 6x0xxxxx@kmitl.ac.th" type="text" id="userEmail" required></v-text-field>
- <v-text-field input v-model="formData.userPassword" label="Password" type="text" placeholder="Between 8 -  20 Characters" id="userPassword" minlength="2"  required><br><br></v-text-field>
+ <v-text-field input v-model="formData.userPassword" label="Password" type="password" placeholder="Between 8 -  20 Characters" id="userPassword" minlength="2"  required><br><br></v-text-field>
 <div class="box Hog" ><h1 style="color:white">Login</h1></div>
+<!-- <v-if "{{res.token}} =! {{null}}" ><h1>Hello {{res.token}}</h1></v-if>
+<v-else><h1>Haha</h1></v-else> -->
  </form>
 
 
 <span class="psw">Forgot <a href="/users/Forgot">password</a></span>
 <span class="Text1">Frist time at KMITL square </span>
 <span class="Regis"> <a href="/users/Regis">Resgister here</a></span>
+
+
 
   </div>
 
@@ -52,18 +55,14 @@ export default {
           // this.token = response.data.token
           // this.id = response.data.userID
           // this.email = response.data.userEmail
-          // this.res = response.data
-
+           this.res = response.data
         })
         .catch((error) => {
           console.log(error)
         })
     },
     },
-
   }
-
-
 </script>
 
 <style scoped>
@@ -81,11 +80,8 @@ export default {
   padding: 30px;
   padding-top: 100px;
   padding-bottom: 200px;
-
 }
-
   .cancelbtn {
-
       margin: 0;
       position: absolute;
       top: 600px;
@@ -101,14 +97,11 @@ export default {
       top: 410px;
       right: 22%;
       }
-
    span.Text1 {
       position: absolute;
       top: 500px;
       right: 22%
       }    
-
-
  span.Regis {
       position: absolute;
       top: 520px;
@@ -123,17 +116,9 @@ export default {
      padding: 30px;
      padding-top: 30px;
      padding-bottom: 30px;
-
     }
     .Hog {
         background-color: rgb(243, 95, 16);
         position: absolute;
     }
-
 </style>
-
-
-
-
-
-
