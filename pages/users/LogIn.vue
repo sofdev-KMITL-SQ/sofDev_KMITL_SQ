@@ -3,10 +3,9 @@
    <!-- {{res.token}} -->
 <form @submit.prevent="createPost">
 <button type="submit"  value="Submit" class="cancelbtn" ><h3 style="color:white">Login</h3></button>
-  <!-- <v-text-field v-model="userEmail" label="Email" placeholder="ex: 6x0xxxxx@kmitl.ac.th" type="text" pattern="[6]{1}[0-4]{1}[0]{1}[1-9]{1}[0-9]{4}@kmitl\.ac\.th" required></v-text-field>
- <v-text-field v-model="userPassword" label="Password" type="text" placeholder="Between 8 -  20 Characters" id="password" minlength="8" maxlength="20" required><br><br></v-text-field> -->
-<v-text-field input v-model="formData.userEmail" label="Email" placeholder="ex: 6x0xxxxx@kmitl.ac.th" type="text" id="userEmail" required></v-text-field>
- <v-text-field input v-model="formData.userPassword" label="Password" type="password" placeholder="Between 8 -  20 Characters" id="userPassword" minlength="2"  required><br><br></v-text-field>
+  <v-text-field v-model="formData.userEmail" label="Email" placeholder="ex: 6x0xxxxx@kmitl.ac.th" type="text" pattern="[6]{1}[0-4]{1}[0]{1}[1-9]{1}[0-9]{4}@kmitl\.ac\.th" required></v-text-field>
+ <v-text-field v-model="formData.userPassword" label="Password" type="password" placeholder="Between 8 -  20 Characters" id="password" minlength="8" maxlength="20" required><br><br></v-text-field>
+ 
 <div class="box Hog" ><h1 style="color:white">Login</h1></div>
 <!-- <v-if "{{res.token}} =! {{null}}" ><h1>Hello {{res.token}}</h1></v-if>
 <v-else><h1>Haha</h1></v-else> -->
