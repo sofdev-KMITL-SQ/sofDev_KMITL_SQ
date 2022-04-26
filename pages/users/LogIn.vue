@@ -16,7 +16,7 @@
 <span class="Text1">Frist time at KMITL square </span>
 <span class="Regis"> <a href="/users/Regis">Resgister here</a></span>
 
-
+   <!-- <h1>Hello {{pass}}</h1>  -->
 
   </div>
 
@@ -32,6 +32,7 @@ export default {
   data() {
     return {
       res:{},
+       pass:{},
       // token: "",
       // id: "",
       // email: "",
@@ -55,6 +56,13 @@ export default {
           // this.id = response.data.userID
           // this.email = response.data.userEmail
            this.res = response.data
+
+           this.pass =JSON.parse(window.localStorage.getItem('user'));
+          //  const user = JSON.parse(localStorage.getItem('user'))
+          //  var Ldata = window.localStorage.getItem("user");
+           window.location.href = "../Home"
+
+
         })
         .catch((error) => {
           console.log(error)
@@ -62,6 +70,7 @@ export default {
     },
     },
   }
+  // modules.exports = Ldata
 </script>
 
 <style scoped>
@@ -121,3 +130,4 @@ export default {
         position: absolute;
     }
 </style>
+

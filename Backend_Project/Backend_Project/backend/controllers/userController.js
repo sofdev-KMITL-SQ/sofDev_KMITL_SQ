@@ -85,9 +85,8 @@ const loginUser = asyncHandle (async(req,res)=>{
     if(userlogin_email && (await bcrypt.compare(userPassword,userlogin_email.userPassword))){
         res.json({
             _id: userlogin_email.id,  //* ส่งข้อมูลกลับมาบางส่วนก็ได้
-            userID: userlogin_email.userID,
             userEmail: userlogin_email.userEmail,
-            token: generateToken(userlogin_email._id) 
+            token: generateToken(userlogin_email._id), 
         })
     }else{
         res.status(400)

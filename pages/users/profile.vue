@@ -1,6 +1,7 @@
 <template lang="html">
    <div style="background-color: white"> 
     <div class="Box1">
+   <h1>Hello {{pass.token}}</h1>
       <form action="/action_page.php">
         <!-- <v-text-field v-model="Email" label="Email" placeholder="ex: 6x0xxxxx" type="text" pattern="[6]{1}[0-4]{1}[0]{1}[1-9]{1}[0-9]{4}@(kmitl|KMITL)\.(ac|AC)\.(th|TH)" required></v-text-field> -->
         <!-- <v-text-field
@@ -109,11 +110,23 @@
 </template>
 
 <script>
-// import axios from 'axios';
+import axios from 'axios';
+
+// import {Ldata} from 'Logln'
+// function getdata(){
+// const user = JSON.parse(localStorage.getItem('user'))
+// return user
+//   }
+// localStorage.setItem('test', {'data' : 'data'})
 export default {
+
   layout: "LayoutProfile",
+name: 'Pass',
   data() {
+
     return {
+      res:{},
+      pass:{},
       Email: "",
       password: "",
       comfirm_password: "",
@@ -127,10 +140,21 @@ export default {
     };
   },
   methods: {
-    onFileSelected(event) {
-      console.log(event);
-      // this.selectedFile = event.target.files[0]
+    
     },
+
+    mounted(){
+  console.log('response');
+    if (localStorage.getItem('user')) 
+        this.pass = JSON.parse(localStorage.getItem('user'));
+}
+  }
+    
+    // onFileSelected(event) {
+    //   console.log(event);
+       
+      // this.selectedFile = event.target.files[0]
+    // },
     // onUpload(){
     //   const fd = new FormData();
     //   fd.append('image',this.selectedFile,this.selectedFile.name)
@@ -140,9 +164,11 @@ export default {
     //   })
 
     // }
-  },
-};
+    
+
 </script>
+<style scoped>
+</style>
 
 <style lang="css" scoped></style>
 
