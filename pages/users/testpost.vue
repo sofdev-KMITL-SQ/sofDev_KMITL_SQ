@@ -45,12 +45,7 @@ export default {
   },
   methods: {
      createPost() {
-        const user = JSON.parse(localStorage.getItem('user'))
-        const config = {
-        headers: {
-            Authorization: `Bearer ${user.token}`
-        }
-    }
+   
        axios
         .post('http://localhost:3300/api/user/login', this.formData)
         //  .get('http://localhost:3300/api/user/me', config)

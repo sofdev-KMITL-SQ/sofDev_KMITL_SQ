@@ -1,14 +1,14 @@
 <template lang="html">
 <div class="center">
   
-<form action="/action_page.php">
-<button type="submit" value="Submit" class="cancelbtn"><h3 style="color:white">Login</h3></button>
+<form @submit.prevent="createPost" action="/Home" >
+<button type="submit"  value="Submit" class="cancelbtn"><h3 style="color:white">Login</h3></button>
    
-  <v-text-field v-model="Email" label="Email" placeholder="ex: 6x0xxxxx@kmitl.ac.th" type="text" pattern="[6]{1}[0-4]{1}[0]{1}[1-9]{1}[0-9]{4}@kmitl\.ac\.th" required></v-text-field>
- <v-text-field v-model="password" label="Password" type="text" placeholder="Between 8 -  20 Characters" id="password" minlength="8" maxlength="20" required><br><br></v-text-field>
-
-
-<div class="box Hog" type="submit"><h1 style="color:white">Login</h1></div>
+  <!-- <v-text-field v-model="userEmail" label="Email" placeholder="ex: 6x0xxxxx@kmitl.ac.th" type="text" pattern="[6]{1}[0-4]{1}[0]{1}[1-9]{1}[0-9]{4}@kmitl\.ac\.th" required></v-text-field>
+ <v-text-field v-model="userPassword" label="Password" type="text" placeholder="Between 8 -  20 Characters" id="password" minlength="8" maxlength="20" required><br><br></v-text-field> -->
+<v-text-field input v-model="formData.userEmail" label="Email" placeholder="ex: 6x0xxxxx@kmitl.ac.th" type="text" id="userEmail" required></v-text-field>
+ <v-text-field input v-model="formData.userPassword" label="Password" type="text" placeholder="Between 8 -  20 Characters" id="userPassword" minlength="2"  required><br><br></v-text-field>
+<div class="box Hog" ><h1 style="color:white">Login</h1></div>
  </form>
 
 
@@ -22,33 +22,52 @@
 
 </template>
 
-
 <script>
+import axios from 'axios'
 export default {
- layout:"Hbar",
+  layout: "Hbar" ,
+  name: 'CreatePost',
   data() {
     return {
-      email: '',
-      password: ''
+      res:{},
+      // token: "",
+      // id: "",
+      // email: "",
+      formData: {
+        userEmail: '',
+        userPassword: '',
+        // body: '',
+      },
     }
   },
   methods: {
-    async handleLoginClicked() {
-      try {
-        const response = await this.$auth.loginWith('local', {
-          data: { user: { email: this.email, password: this.password } }
+     createPost() {
+   
+       axios
+        .post('http://localhost:3300/api/user/login', this.formData)
+        //  .get('http://localhost:3300/api/user/me', config)
+        .then((response) => {
+          console.log(response)
+          localStorage.setItem('user', JSON.stringify(response.data))
+          // this.token = response.data.token
+          // this.id = response.data.userID
+          // this.email = response.data.userEmail
+          // this.res = response.data
+
         })
-        console.log(response)
-        if (response.data.success) {
-          this.$router.replace({ name: 'blogs' })
-        }
-      } catch (err) {
-        console.log(err)
-      }
-    }
+        .catch((error) => {
+          console.log(error)
+        })
+    },
+    },
+
   }
-}
+
+
 </script>
+
+<style scoped>
+</style>
 
 <style lang="css" scoped></style>
 

@@ -1,8 +1,6 @@
 
 <template>
-<div><h1>Hello {{res.token}}</h1> 
-     <h1>Hello {{res.userID}}</h1> 
-     <h1>Hello {{res.userEmail}}</h1> </div>
+<div><h1>Hello</h1>  </div>
 </template>
 
 <script>
