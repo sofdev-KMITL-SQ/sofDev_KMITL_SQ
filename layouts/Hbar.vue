@@ -7,7 +7,7 @@
            <p class="display-1 fw-normal"><img src="@/images/KMITLsqLOGO.png" width="325" height="auto" class="nav-avatar"></p> 
           </nuxt-link>
 
-         <ul  class="navbar-nav" aria-current="page"> 
+         <ul  class="navbar-nav"> 
 
           <!-- <form action="" class="d-flex  me-4 w-100 h-50 mt-5">
             <input type="search" class="form-control  " name="" id="" placeholder="ค้นหาสินค้า" describedby="search-addon">

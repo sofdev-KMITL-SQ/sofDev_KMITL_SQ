@@ -16,6 +16,7 @@
       <H3>Email : {{ pass.userEmail }}</H3>
       <H3>Tel. : {{ pass.userTel }}</H3>
 <H3>Interesting in... : {{ pass.userInterest }}</H3>
+<H3>UserID : {{ pass._id }}</H3>
       <div class="Box2">
         <form action="/users/EditUser">
         <button type="submit" value="Submit" class="editBT">

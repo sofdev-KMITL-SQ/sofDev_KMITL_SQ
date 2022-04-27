@@ -27,7 +27,7 @@
 <script>
 import axios from 'axios'
 export default {
-  layout: "Hbar" ,
+  layout: "LayoutLogin" ,
   name: 'CreatePost',
   data() {
     return {
@@ -79,12 +79,12 @@ export default {
 
 <style>
 .center {
-  margin: 100px auto;
+  margin: 160px auto;
   width: 60%;
   border: 4px solid rgb(243, 95, 16);
   padding: 30px;
   padding-top: 100px;
-  padding-bottom: 200px;
+  padding-bottom: 240px;
 }
   .cancelbtn {
       margin: 0;
