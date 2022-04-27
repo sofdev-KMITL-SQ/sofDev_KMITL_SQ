@@ -2,7 +2,7 @@ const userModel = require('../models/userModel')
 const jwt = require('jsonwebtoken') 
 const bcrypt = require('bcryptjs')
 const asyncHandle = require('express-async-handler')
-// const multer = require('multer')
+const multer = require('multer')
 
 
 // //! ใช้ระบุตำแหน่งจัดเก็บไฟล์
@@ -59,6 +59,8 @@ const registerUser = asyncHandle (async (req,res)=>{
     //! Hash password (เข้ารหัสข้อมูล user)
     const salt =await bcrypt.genSalt(10) //* เข้ารหัส 10 ครั้ง
     const hashPassword = await bcrypt.hash(userPassword,salt) //* เข้ารหัสแล้ว
+    console.log(req)
+    console.log(req.file);
 
     //? create user 1 อัน ไปใส่ใน DB
     const registerUser = await userModel.create({
@@ -67,23 +69,25 @@ const registerUser = asyncHandle (async (req,res)=>{
         userEmail: req.body.userEmail,
         userPassword: hashPassword,   //* hashed password (เข้ารหัสข้อมูล)
         userAddress: req.body.userAddress,
-        // userProfilePic: req.body.userProfilePic,
-        userProfilePic: req.file.filename,
+        // userProfilePic: req.file.filename,
         userDescription: req.body.userDescription,
         userInterest: req.body.userInterest,
         userTel:req.body.userTel
 
     })
-
+    console.log("Pun");
     if(registerUser){   //* เช็คชัวว่า registerUser ทำงานได้จริง ส่ง 201 คือ create success
-        res.status(201).json({ 
-            _id: registerUser.id,  //* ส่งข้อมูลกลับมาบางส่วนก็ได้
-            userEmail: registerUser.userEmail,
-            token: generateToken(registerUser._id)   //? ให้ส่ง token กลับไปด้วย
-        })
+        console.log("in1");
+        res.status(200).json(req.body)
+            // _id: registerUser.id,  //* ส่งข้อมูลกลับมาบางส่วนก็ได้
+            // userEmail: registerUser.userEmail,
+            // token: generateToken(registerUser._id)   //? ให้ส่ง token กลับไปด้วย
+            
+        // })
     }else{ 
+        console.log("error");
         res.status(400)
-        throw new Error("User Model is bad quality !")
+        // throw new Error("User Model is bad quality !")
     }
 
 })
@@ -101,21 +105,77 @@ const loginUser = asyncHandle (async(req,res)=>{
 
     //* check user email 
     const userlogin_email = await userModel.findOne({userEmail})
-
+    // console.log("in");
     // //*check email กับ pass ว่าตรงกันไหม โดยต้อง    (เอาค่าที่ใส่เข้ามา มาเทียบกับ , decode password) 
     if(userlogin_email && (await bcrypt.compare(userPassword,userlogin_email.userPassword))){
+        
         res.json({
             _id: userlogin_email.id,  //* ส่งข้อมูลกลับมาบางส่วนก็ได้
             userEmail: userlogin_email.userEmail,
             token: generateToken(userlogin_email._id) 
         })
     }else{
+        // console.log("error");
         res.status(400)
-        throw new Error("Invalid hotmail and password")
+        // throw new Error("Invalid hotmail and password")
     }
 
 })
 
+
+
+
+
+// @desc       check mail  user
+// @route      POST /api/user/checkEmail_repass
+// @access     Private
+const checkEmail_repass = asyncHandle(async(req,res)=>{
+
+    const {userEmail} = req.body
+    const userCheckEmail_repass = await userModel.findOne({userEmail})
+
+    if(userCheckEmail_repass){
+        res.status(200).json({
+            _id: userCheckEmail_repass.id,
+            userEmail: userCheckEmail_repass.userEmail,
+            token: generateToken(userCheckEmail_repass._id) 
+        })
+    }else{
+        res.status(400)
+        throw new Error("Not found Hotmail in database")
+    }
+})
+
+
+
+
+
+
+// @desc       repass  user
+// @route      POST /api/user/rePassword
+// @access     Private
+const repassword = asyncHandle(async(req,res)=>{
+    const {userPassword} = req.body
+    if(!userPassword){
+        res.status(400)
+        throw new Error("Please enter new Password")
+    }
+    
+    const findID = await userModel.findById(req.params.id)
+    if(!findID){
+        res.status(400)
+        throw new Error("Not found ID user")
+    }
+    console.log(req.body);
+    //! Hash password (เข้ารหัสข้อมูล user)
+    const salt =await bcrypt.genSalt(10) //* เข้ารหัส 10 ครั้ง
+    const hashPassword = await bcrypt.hash(userPassword,salt) //* เข้ารหัสแล้ว
+
+    const Repassword = { userPassword : hashPassword}
+    const update_newPassword = await userModel.findByIdAndUpdate(findID,Repassword,{new:true})
+    res.status(200).json(update_newPassword)
+
+})
 
 
 
@@ -224,5 +284,7 @@ module.exports = {
     loginUser,
     getUser,
     updateUser,
-    deleteUser
+    deleteUser,
+    repassword,
+    checkEmail_repass
 }

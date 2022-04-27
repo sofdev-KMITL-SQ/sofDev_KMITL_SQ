@@ -1,6 +1,6 @@
 const express = require('express')
 const router = express.Router()
-const {registerUser,loginUser,getUser,updateUser,deleteUser} = require('../controllers/userController')
+const {registerUser,loginUser,getUser,updateUser,deleteUser,repassword,checkEmail_repass} = require('../controllers/userController')
 const {protect} = require('../middleware/authenMiddleware')
 const multer = require('multer')
 
@@ -29,6 +29,9 @@ router.put('/editprofile/:id',upload.single('userProfilePic'),updateUser)
 // router.put('/editprofile/:id',updateUser)
 router.get('/me',protect,getUser)   //! protect โดยต้องเข้าถึงโดย token ;ซึ่งทำงาน protect เสร็จแล้วค่อยไปทำ getUser
 router.delete('/deleteme',deleteUser)
+
+router.post('/checkEmail_repass',checkEmail_repass)
+router.put('/rePassword/:id',repassword)
 
 module.exports = router
 

@@ -37,7 +37,7 @@ const userSchema = mongoose.Schema({
     userTel:{
         type: String,
         required: [true,' Please enter your tel !!'],
-        unique: true
+        // unique: true
     },
     
 },{

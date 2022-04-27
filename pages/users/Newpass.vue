@@ -4,8 +4,8 @@
   <h1 style="color:rgb(243, 95, 16)">Reset Password</h1>
   <h1 >User :</h1>
  <button type="submit" value="Submit" class="cancelbtn"><h3 style="color:white">Change Password</h3></button>
- <v-text-field v-model="password" label="Password" type="text" placeholder="Between 8 -  20 Characters" id="password" minlength="8" maxlength="20" required><br><br></v-text-field>
- <v-text-field v-model="comfirm_password" label="Comfirm password" type="text" id="Cpassword"minlength="8" maxlength="20" pattern=".{8,}" required><br><br></v-text-field>
+ <v-text-field v-model="password" label="Password" type="text" placeholder="Between 4 - 10 Characters" id="password" minlength="4" maxlength="10" required><br><br></v-text-field>
+ <v-text-field v-model="comfirm_password" label="Comfirm password" type="text" id="Cpassword"minlength="4" maxlength="10" pattern=".{8,}" required><br><br></v-text-field>
 </form>
 </style>
 
