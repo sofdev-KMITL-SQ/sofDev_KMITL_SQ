@@ -1,11 +1,6 @@
 const mongoose = require('mongoose')
 
 const userSchema = mongoose.Schema({
-    userID:{
-        type: String,
-        required: [true,' Please enter your id !!'],
-        unique: true
-    },
     userName:{
         type: String,
         required: [true,' Please enter your name !!']
@@ -27,10 +22,10 @@ const userSchema = mongoose.Schema({
         type: String,
         required: [true,' Please enter your address !!']
     },
-    userProfilePic:{
-        type: String,
-        required: [true,' Please enter your profilepic !!']
-    },
+    // userProfilePic:{
+    //     type: String,
+    //     required: [true,' Please enter your profilepic !!']
+    // },
     userDescription:{
         type: String,
         required: [true,' Please enter your description !!']
@@ -42,21 +37,8 @@ const userSchema = mongoose.Schema({
     userTel:{
         type: String,
         required: [true,' Please enter your tel !!'],
-        unique: true
+        // unique: true
     },
-    
-
-    //! เดี๋ยวลองดูอีกที คิดว่าอาจจะทำแยก func กัน
-    // userShopFollwed:{
-    //     type: String,
-    //     required: [True,' Please enter your shopfoll !!']
-    // },
-    
-    // userCart:{
-    //     type: String,
-    //     required: [True,' Please enter your cart !!']
-    // },
-    
     
 },{
     timestamps: true

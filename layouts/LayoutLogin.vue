@@ -1,5 +1,5 @@
 <template>
-  <v-app id="inspire">
+  <v-app id="inspire" style="background-color: rgba(99, 99, 100, 0.478)">
     <v-app-bar
       :clipped-left="$vuetify.breakpoint.lgAndUp"
       app
@@ -16,16 +16,7 @@
           >&nbsp;SQUARE</a
         >
       </v-toolbar-title>
-      <v-text-field
-      clearable
-        flat
-        solo-inverted
-        
-        hide-details
-        append-icon="mdi-magnify border"
-        label="ค้นหาสินค้า"
-        class="hidden-sm-and-down pl-10 ml-4"
-      />
+     
       
 
       
