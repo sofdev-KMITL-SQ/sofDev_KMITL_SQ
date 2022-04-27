@@ -1,5 +1,5 @@
 <template lang="html">
- <form @submit.prevent="createPost" class ="from-horizontal" enctype ="multipart/form-data" >
+ <form @submit.prevent="createPost" >
  <!-- <form @submit.prevent="createPost" > -->
   <div class="Box1">
      <v-text-field
@@ -27,14 +27,7 @@
         ><br /><br />
       </v-text-field>
       <!-- <v-text-field v-model="Email" label="Email" placeholder="ex: 6x0xxxxx" type="text" pattern="[6]{1}[0-4]{1}[0]{1}[1-9]{1}[0-9]{4}@(kmitl|KMITL)\.(ac|AC)\.(th|TH)" required></v-text-field> -->
-      <v-text-field
-        v-model="formData.userEmail"
-        label="Email"
-        placeholder="ex: 6x0xxxxx@kmitl.ac.th"
-        type="text"
-        pattern="[6]{1}[0-4]{1}[0]{1}[1-9]{1}[0-9]{4}@kmitl\.ac\.th"
-        required
-      ></v-text-field>
+    
      
         <v-text-field
         v-model="formData.userAddress"
@@ -53,7 +46,7 @@
    
 
     <div class="Box2">
-      <v-text-field v-model="formData.userDescription" label="About me"></v-text-field>
+      <v-text-field v-model="formData.userDescription" label="Description"></v-text-field>
       <v-text-field v-model="formData.userInterest" label="Interesting in..."></v-text-field>
 <!-- 
    <input
@@ -62,8 +55,8 @@
   name="userProfilePic"
   @change="uploadImage()"
 /> -->
-
- <input type="file" class = "form control" name="formData.userProfilePic"/> 
+<!-- 
+ <input type="file" class = "form control" name="formData.userProfilePic"/>  -->
 
     <button type="submit" value="Submit" class="conBT">
           <h3 style="color: white">Comfirm</h3>
@@ -104,10 +97,10 @@ export default {
       formData: {
         userName:'',
         userSurename:'',
-        userEmail:'',
-        userPassword:'',
+        // userEmail:'',
+        // userPassword:'',
         userAddress:'',
-        userProfilePic:'',
+        // userProfilePic:'',
         userDescription:'',
         userInterest:'',
         userTel:''
@@ -125,23 +118,35 @@ export default {
   console.log(rawImg)
   
 },
+//6269abfe9836d547e99f61e2
      createPost() {
-   
+       var $this = this;
+       $this.pass =JSON.parse(window.localStorage.getItem('Regit'));
+       const link1 = 'http://localhost:3300/api/user/editprofile/'+this.pass._id
        axios
-        .post('http://localhost:3300/api/user/register', this.formData)
+        .post(link1, this.formData)
+
    
         .then((response) => {
-          console.log(response)
+          
+          
+          
+          console.log(response);
+          // console.log(link1)
+          //  console.log(typeof(link1))
+          //  console.log(typeof($this.pass._id))
+          // console.log(this.pass._id)
           localStorage.setItem('Regit', JSON.stringify(response.data))
           // this.token = response.data.token
           // this.id = response.data.userID
           // this.email = response.data.userEmail
-           this.res = response.data
+           $this.res = response.data
 
-           this.pass =JSON.parse(window.localStorage.getItem('Regit'));
+           $this.pass =JSON.parse(window.localStorage.getItem('Regit'));
+          // console.log(this.pass._id)
           //  const user = JSON.parse(localStorage.getItem('user'))
           //  var Ldata = window.localStorage.getItem("user");
-          //  window.location.href = "../Home"
+           window.location.href = "../users/profile"
 
 
         })
@@ -182,13 +187,13 @@ export default {
 
 .Box2 {
   position: absolute;
-  margin-top: -364px;
+  margin-top: -224px;
   right: 30px;
   width: 50%;
   border: 4px solid rgb(243, 95, 16);
   padding: 20px;
   padding-top: 55px;
-  padding-bottom: 309px;
+  padding-bottom: 209px;
   background-color: rgba(99, 99, 100, 0.478);
 }
 

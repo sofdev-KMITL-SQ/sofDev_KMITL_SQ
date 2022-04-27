@@ -75,15 +75,22 @@ const registerUser = asyncHandle (async (req,res)=>{
         userTel:req.body.userTel
 
     })
-    console.log("Pun");
+    // console.log("Pun");
     if(registerUser){   //* เช็คชัวว่า registerUser ทำงานได้จริง ส่ง 201 คือ create success
-        console.log("in1");
-        res.status(200).json(req.body)
-            // _id: registerUser.id,  //* ส่งข้อมูลกลับมาบางส่วนก็ได้
-            // userEmail: registerUser.userEmail,
-            // token: generateToken(registerUser._id)   //? ให้ส่ง token กลับไปด้วย
+        // console.log("in1");
+        res.status(200).json({
+            _id: registerUser.id,  //* ส่งข้อมูลกลับมาบางส่วนก็ได้
+            userEmail: registerUser.userEmail,
+            userName: registerUser.userName,
+            userSurename: registerUser.userSurename,
+            userTel : registerUser.userTel,
+            userAddress: registerUser.userAddress,
+            userDescription: registerUser.userDescription,
+            userInterest: registerUser.userInterest,
+
+            token: generateToken(registerUser._id)   //? ให้ส่ง token กลับไปด้วย
             
-        // })
+        })
     }else{ 
         console.log("error");
         res.status(400)
@@ -186,13 +193,13 @@ const repassword = asyncHandle(async(req,res)=>{
 // @access     Private
  //! หาโดยใช้ token ซึ่งไปทำงาน protect ก่อนแล้วส่ง req.user  มาเรียกใช้เรียกข้อมูลของ token นั้นได้
 const getUser = asyncHandle (async(req,res)=>{       
-    // const {_id,userID,userEmail} = await userModel.findById(req.user.id)
-    // res.status(200).json({
-    //     _id,
-    //     userID,
-    //     userEmail
-    // })
-    res.status(200).json(req.user)   //? ให้มันส่งกลับมาหมดเลย ยกเว้น userPassword ที่ไม่ select มาจาก protect
+    const {_id,userID,userEmail} = await userModel.findById(req.user.id)
+    res.status(200).json({
+        _id,
+        userID,
+        userEmail,
+    })
+    // res.status(200).json(req.user)   //? ให้มันส่งกลับมาหมดเลย ยกเว้น userPassword ที่ไม่ select มาจาก protect
 })
 
 
@@ -206,17 +213,17 @@ const getUser = asyncHandle (async(req,res)=>{
 const updateUser = asyncHandle(async(req,res)=>{
     
     const {userName,userSurename,userAddress,
-        userProfilePic,userDescription,userInterest} = req.body
+        userDescription,userInterest,userTel} = req.body
 
     if(!userName||!userSurename||!userAddress
-        ||!userProfilePic||!userDescription||!userInterest){
+        ||!userDescription||!userInterest||!userTel){
             res.status(400)
             throw new Error("Please enter all update data of USER !!")
         }
 
 
     const id_update = await userModel.findById(req.params.id)
-    
+    console.log(id_update);
     if(!id_update){
         res.status(400)
         throw new Error("not  found data user id in database !")
@@ -228,9 +235,10 @@ const updateUser = asyncHandle(async(req,res)=>{
         userSurename: req.body.userSurename,
         userAddress: req.body.userAddress,
         // userProfilePic: req.body.userProfilePic,
-        userProfilePic: req.file.filename,
+        // userProfilePic: req.file.filename,
         userDescription: req.body.userDescription,
         userInterest: req.body.userInterest,
+        userTel: req.body.userTel,
     })
     //!-----------------------------------------
 
