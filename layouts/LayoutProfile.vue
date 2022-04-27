@@ -45,7 +45,7 @@
           contain
           max-height="75"
           max-width="75"
-          src="https://picsum.photos/id/11/500/300"
+           :src="require('../assets/img/user/user.jpg')"
         ></v-img>
       </v-btn>
       <!-- <v-btn v-on="on" icon>

@@ -10,10 +10,11 @@ import '..\\node_modules\\vuetify\\dist\\vuetify.css'
 
 import _2d15d7c1 from '..\\layouts\\Hbar.vue'
 import _545b9489 from '..\\layouts\\LayoutLogin.vue'
+import _f621326e from '..\\layouts\\LayoutProfile.vue'
 import _9fafbaaa from '..\\layouts\\LayoutUser.vue'
 import _6f6c098b from './layouts/default.vue'
 
-const layouts = { "_Hbar": sanitizeComponent(_2d15d7c1),"_LayoutLogin": sanitizeComponent(_545b9489),"_LayoutUser": sanitizeComponent(_9fafbaaa),"_default": sanitizeComponent(_6f6c098b) }
+const layouts = { "_Hbar": sanitizeComponent(_2d15d7c1),"_LayoutLogin": sanitizeComponent(_545b9489),"_LayoutProfile": sanitizeComponent(_f621326e),"_LayoutUser": sanitizeComponent(_9fafbaaa),"_default": sanitizeComponent(_6f6c098b) }
 
 export default {
   render (h, props) {

@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid="sm" style="background-color: white">
+  <v-container fluid style="background-color: white">
     <p class="display-2 black--text font-weight-light text-center pa-5">
       ช่องทางการชำระเงิน
     </p>
@@ -11,13 +11,13 @@
           <td class="text-right pa-2">
             <v-btn
           
-              @click="overlay = !overlay"
+              @click="overlay = !overlay ; payDes = !payDes"
               align="center"
            class="ml-4"
              href="/home"
               style="background-color: #121235"
                elevation="2"
-              v-model="selected"
+              v-model="payDes"
               label="เก็บเงินปลายทาง"
               value="เก็บเงินปลายทาง"
             >เก็บเงินปลายทาง</v-btn>
@@ -83,6 +83,7 @@
 export default {
   data() {
     return {
+      payDes: false,
       snackbar: false,
       overlay: false,
       zIndex: 0,

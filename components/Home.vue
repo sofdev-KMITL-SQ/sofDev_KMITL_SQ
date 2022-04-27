@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid="sm" class="bg">
+  <v-container fluid class="bg">
     <!-- slide -->
     <v-carousel hide-delimiters class=" pt-12 mt-12" >
       <!-- s1 -->
@@ -46,7 +46,7 @@
    <!-- proDuctTypes -->
     <v-container class="grey lighten-5" style="background: transparent">
       <v-row class="" align="center">
-        <v-col>
+        <v-col  align="center">
           <v-btn
             x-large
             outlined
@@ -59,13 +59,14 @@
               contain
               max-height="40"
               max-width="40"
-              :src="require('@/assets/img/home/cosmetics.png')"
+              :src="require('@/assets/img/home/harvest.png')"
             >
             </v-img>
           </v-btn>
+          <p class="black--text">หมวด1</p>
         </v-col>
 
-        <v-col>
+        <v-col align="center">
           <v-btn
             x-large
               outlined
@@ -82,9 +83,30 @@
             >
             </v-img>
           </v-btn>
+           <p class="black--text">หมวด2</p>
         </v-col>
 
-        <v-col>
+        <v-col align="center">
+          <v-btn
+            x-large
+              outlined
+            icon
+            class="btn btn-primary rounded-circle"
+            href="/Shop"
+          >
+            <v-img
+              class="products-Types"
+              contain
+              max-height="40"
+              max-width="40"
+              :src="require('@/assets/img/home/harvest.png')"
+            >
+            </v-img>
+          </v-btn>
+           <p class="black--text">หมวด3</p>
+        </v-col>
+
+        <v-col align="center">
           <v-btn
             x-large
               outlined
@@ -101,9 +123,30 @@
             >
             </v-img>
           </v-btn>
+           <p class="black--text">หมวด4</p>
         </v-col>
 
-        <v-col>
+        <v-col align="center">
+          <v-btn
+            x-large
+              outlined
+            icon
+            class="btn btn-primary rounded-circle"
+            href="/Shop"
+          >
+            <v-img
+              class="products-Types"
+              contain
+              max-height="40"
+              max-width="40"
+              :src="require('@/assets/img/home/harvest.png')"
+            >
+            </v-img>
+          </v-btn>
+           <p class="black--text">หมวด5</p>
+        </v-col>
+
+        <v-col align="center">
           <v-btn
             x-large
               outlined
@@ -120,9 +163,10 @@
             >
             </v-img>
           </v-btn>
+           <p class="black--text">หมวด6</p>
         </v-col>
 
-        <v-col>
+        <v-col align="center">
           <v-btn
             x-large
               outlined
@@ -135,48 +179,11 @@
               contain
               max-height="40"
               max-width="40"
-              :src="require('@/assets/img/home/cosmetics.png')"
+              :src="require('@/assets/img/home/harvest.png')"
             >
             </v-img>
           </v-btn>
-        </v-col>
-
-        <v-col>
-          <v-btn
-            x-large
-              outlined
-            icon
-            class="btn btn-primary rounded-circle"
-            href="/Shop"
-          >
-            <v-img
-              class="products-Types"
-              contain
-              max-height="40"
-              max-width="40"
-              :src="require('@/assets/img/home/cosmetics.png')"
-            >
-            </v-img>
-          </v-btn>
-        </v-col>
-
-        <v-col>
-          <v-btn
-            x-large
-              outlined
-            icon
-            class="btn btn-primary rounded-circle"
-            href="/Shop"
-          >
-            <v-img
-              class="products-Types"
-              contain
-              max-height="40"
-              max-width="40"
-              :src="require('@/assets/img/home/cosmetics.png')"
-            >
-            </v-img>
-          </v-btn>
+           <p class="black--text">หมวด7</p>
         </v-col>
       </v-row>
  <!-- proDuctTypes -->
@@ -326,12 +333,12 @@
                       height="200px"
                       :src="require('@/assets/img/home/deal1.jpg')"
                     >
-                      <v-card-title>Bags & Purses </v-card-title>
+                      <v-card-title>ชื่อสินค้า</v-card-title>
                     </v-img>
 
                     <v-card-text class="text--primary text-center">
                       <div>Upto 60% + Extra 10%</div>
-                      <div>Baggit, Zara, Fossil</div>
+                             <div>ร้านนี้ถ้าจะยาก</div>
                     </v-card-text>
 
                     <div class="text-center">
@@ -350,12 +357,12 @@
                       height="200px"
                       :src="require('@/assets/img/home/deal2.jpg')"
                     >
-                      <v-card-title>T-Shirt </v-card-title>
+                      <v-card-title>ชื่อสินค้า </v-card-title>
                     </v-img>
 
                     <v-card-text class="text--primary text-center">
                       <div>Upto 50%</div>
-                      <div>Zara, Selected, Celio</div>
+                          <div>ร้านนี้หล่อเท่</div>
                     </v-card-text>
 
                     <div class="text-center">
@@ -374,12 +381,12 @@
                       height="200px"
                       :src="require('@/assets/img/home/deal3.jpg')"
                     >
-                      <v-card-title>Jeans </v-card-title>
+                      <v-card-title>ชื่อสินค้า </v-card-title>
                     </v-img>
 
                     <v-card-text class="text--primary text-center">
                       <div>Upto 60% + Extra 10%</div>
-                      <div>Jack & Jones, Levis</div>
+                       <div>ร้านนี้ถ้าจะยาก</div>
                     </v-card-text>
 
                     <div class="text-center">
@@ -398,12 +405,14 @@
                       height="200px"
                       :src="require('@/assets/img/home/deal4.jpg')"
                     >
-                      <v-card-title>Shoes </v-card-title>
+                      <v-card-title>ชื่อสินค้า </v-card-title>
                     </v-img>
 
                     <v-card-text class="text--primary text-center">
-                      <div>Upto 60% + Extra 10%</div>
-                      <div>Nike, Adidas, Puma</div>
+                      <div>Upto 33% + Extra 10%</div>
+                       <div>ร้านนี้หล่อเท่</div>
+
+                   
                     </v-card-text>
 
                     <div class="text-center">

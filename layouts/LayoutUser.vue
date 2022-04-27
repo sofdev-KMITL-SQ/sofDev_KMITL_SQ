@@ -17,35 +17,36 @@
         >
       </v-toolbar-title>
       <v-text-field
-      clearable
+        clearable
         flat
         solo-inverted
-        
         hide-details
-        append-icon="mdi-magnify border"
         label="ค้นหาสินค้า"
         class="hidden-sm-and-down pl-10 ml-4"
       />
-      
 
+      <v-btn class="ma-2"
+      outlined tile
+      type="submit"
       
+      ><v-icon>mdi-magnify border</v-icon> </v-btn>
+
       <v-spacer />
-      <v-btn v-on="on" href="/Carts" icon class="mr-12">
+      <v-btn href="/Carts" icon class="mr-12">
         <v-badge content="2" value="2" color="green" overlap>
           <v-icon>mdi-cart</v-icon>
         </v-badge>
       </v-btn>
 
-      <v-btn icon class="mr-5"  href="/users/profile">
+      <v-btn icon class="mr-5" href="/users/profile">
         <!-- หน้าลูกค้า -->
         <v-img
-        
           class="rounded-circle"
           style="border-radius: 50%"
           contain
           max-height="75"
           max-width="75"
-          src="https://picsum.photos/id/11/500/300"
+           :src="require('../assets/img/user/user.jpg')"
         ></v-img>
       </v-btn>
       <!-- <v-btn v-on="on" icon>
@@ -59,7 +60,7 @@
         </v-badge>
       </v-btn> -->
     </v-app-bar>
-     <!-- <v-content >
+    <!-- <v-content >
      <v-bottom-navigation :value="activeBtn" color="primary" horizontal>
         <a href="/" class="v-btn">
           <span>Home</span>
@@ -91,7 +92,6 @@
     </v-content> -->
     <router-view />
 
-
     <!-- หน้าล่างสุด -->
     <v-footer :padless="true">
       <v-card flat tile width="100%" class="secondary white--text text-center">
@@ -111,11 +111,7 @@
         </v-card-text>
 
         <v-card-text class="white--text pt-0">
-          โอ๊ยยยยยยยยยยยยยยยยยยยยยยยยยยยยยยยยยยยยยยยยยยยยยยย
-          เย้ยยยยยยยยยยยยยยยยยยยยยยยยยยยยยยยยยยยยยยยยยยยยยยยยช
-          เย้ยยยยยยยยยยยยยยยยยยยยยยยยยยยยยยยยยยยยยยยยยยยยยยยยช
-          เย้ยยยยยยยยยยยยยยยยยยยยยยยยยยยยยยยยยยยยยยยยยยยยยยยยช
-
+  จัดทำขึ้นเพื่อให้บุคลากรและนักศึกษาในสถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบังใช้ในการซื้อ-ขายสินค้าของตนเองในสถาบัน
         </v-card-text>
 
         <v-divider></v-divider>

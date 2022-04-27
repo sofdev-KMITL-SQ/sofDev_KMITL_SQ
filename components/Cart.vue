@@ -1,5 +1,5 @@
 <template>
-  <v-container  fluid="sm" class="" style="background-color: white">
+  <v-container  fluid class="" style="background-color: white">
     <v-container >
       <p class="display-3  black--text font-weight-light  text-center pa-4">SHOPPING CART</p>
       <v-row>
@@ -28,13 +28,13 @@
                       </v-list-item-avatar>
 
                       <v-list-item-content>
-                        <v-list-item-title>Item 1</v-list-item-title>
-                        <v-list-item-subtitle>ค้ามนุษย์บ่หนิ</v-list-item-subtitle>
+                        <v-list-item-title>ยาหม่อง</v-list-item-title>
+                        <v-list-item-subtitle>ชื่อร้าน</v-list-item-subtitle>
                       </v-list-item-content>
                     </v-list-item>
                   </td>
                    <!-- Item 1 price-->
-                  <td>฿ 45.55</td>
+                  <td>฿45</td>
                   <td>
                     <v-text-field
                       class="pt-10"
@@ -46,8 +46,8 @@
                       type="number"
                     ></v-text-field>
                   </td>
-                  <td>฿ รวม99.99</td>
-                  <td><a>X</a></td>
+                  <td>฿90</td>
+                  <td><a class="red--text">X</a></td>
                 </tr>
                
                
@@ -62,12 +62,12 @@
                       </v-list-item-avatar>
 
                       <v-list-item-content>
-                        <v-list-item-title>Item 2</v-list-item-title>
-                        <v-list-item-subtitle>Lorem Ipsum</v-list-item-subtitle>
+                        <v-list-item-title>ชื่อสินค้า</v-list-item-title>
+                        <v-list-item-subtitle>ร้านนี้เท่</v-list-item-subtitle>
                       </v-list-item-content>
                     </v-list-item>
                   </td>
-                  <td>฿ 40.00</td>
+                  <td>฿40</td>
                   <td>
                     <v-text-field
                       class="pt-10"
@@ -79,8 +79,8 @@
                       type="number"
                     ></v-text-field>
                   </td>
-                  <td>฿ รวม80.00</td>
-                  <td><a>X</a></td>
+                  <td>฿80</td>
+                  <td><a class="red--text">X</a></td>
                 </tr>
               </tbody>
             </template>
@@ -88,34 +88,19 @@
         </v-col>
         <v-col :cols="12" md="3" sm="12" style="background-color: gray">
           <p class="headline">รวมยอด Order</p>
-          <p class="overline">
-            Shipping and additional costs are calculated based on values you
-            have entered.
-          </p>
           <v-simple-table>
             <template v-slot:default>
               <tbody>
                 <tr>
-                  <td>Order Subtotal</td>
-                  <td class="text-right" style="width: 50px">$160.00</td>
-                </tr>
-                <tr>
-                  <td>Shipping Charges</td>
-                  <td class="text-right" style="width: 50px">$10.00</td>
-                </tr>
-                <tr>
-                  <td>Tax</td>
-                  <td class="text-right" style="width: 50px">$5.00</td>
-                </tr>
-                <tr>
                   <td>Total</td>
-                  <td class="text-right" style="width: 50px"><b>$175.00</b></td>
+                  <td class="text-right" style="width: 50px"><b>฿170</b></td>
                 </tr>
               </tbody>
             </template>
           </v-simple-table>
-          <div class="text-center">
-            <v-btn
+          <v-container fluid class="text-center" >
+         
+           <v-btn 
               href="/Shipping"
               class="ma-2"
               :loading="loading2"
@@ -123,12 +108,14 @@
               color="success"
               @click="loader = 'loading2'"
             >
-              PROCEED TO PAY&SHIPPING 
+            PAY & SHIPPING 
               <template v-slot:loader>
                 <span>Loading...</span>
               </template>
             </v-btn>
-          </div>
+  
+           
+          </v-container>
         </v-col>
       </v-row>
     </v-container>

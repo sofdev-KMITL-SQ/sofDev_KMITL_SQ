@@ -42,6 +42,41 @@
     "_name": "_42ebd22c"
   },
   {
+    "name": "Store",
+    "path": "/Store",
+    "component": "C:\\\\Users\\\\Bravo\\\\Desktop\\\\SofDev\\\\kmitlNuxtJS\\\\Isreal\\\\v1\\\\sofDev_KMITL_SQ\\\\pages\\\\Store\\\\index.vue",
+    "chunkName": "pages/Store/index",
+    "_name": "_39122b1e"
+  },
+  {
+    "name": "LoginTest-logintest",
+    "path": "/LoginTest/logintest",
+    "component": "C:\\\\Users\\\\Bravo\\\\Desktop\\\\SofDev\\\\kmitlNuxtJS\\\\Isreal\\\\v1\\\\sofDev_KMITL_SQ\\\\pages\\\\LoginTest\\\\logintest.vue",
+    "chunkName": "pages/LoginTest/logintest",
+    "_name": "_26dec1c0"
+  },
+  {
+    "name": "Product-Review",
+    "path": "/Product/Review",
+    "component": "C:\\\\Users\\\\Bravo\\\\Desktop\\\\SofDev\\\\kmitlNuxtJS\\\\Isreal\\\\v1\\\\sofDev_KMITL_SQ\\\\pages\\\\Product\\\\Review\\\\index.vue",
+    "chunkName": "pages/Product/Review/index",
+    "_name": "_ae7746aa"
+  },
+  {
+    "name": "Shipping-Paying",
+    "path": "/Shipping/Paying",
+    "component": "C:\\\\Users\\\\Bravo\\\\Desktop\\\\SofDev\\\\kmitlNuxtJS\\\\Isreal\\\\v1\\\\sofDev_KMITL_SQ\\\\pages\\\\Shipping\\\\Paying\\\\index.vue",
+    "chunkName": "pages/Shipping/Paying/index",
+    "_name": "_33129c5a"
+  },
+  {
+    "name": "Shop-shop",
+    "path": "/Shop/shop",
+    "component": "C:\\\\Users\\\\Bravo\\\\Desktop\\\\SofDev\\\\kmitlNuxtJS\\\\Isreal\\\\v1\\\\sofDev_KMITL_SQ\\\\pages\\\\Shop\\\\shop.js",
+    "chunkName": "pages/Shop/shop",
+    "_name": "_0a602b83"
+  },
+  {
     "name": "users-copy",
     "path": "/users/copy",
     "component": "C:\\\\Users\\\\Bravo\\\\Desktop\\\\SofDev\\\\kmitlNuxtJS\\\\Isreal\\\\v1\\\\sofDev_KMITL_SQ\\\\pages\\\\users\\\\copy.vue",
@@ -63,11 +98,46 @@
     "_name": "_2286d1e1"
   },
   {
+    "name": "users-MyShop",
+    "path": "/users/MyShop",
+    "component": "C:\\\\Users\\\\Bravo\\\\Desktop\\\\SofDev\\\\kmitlNuxtJS\\\\Isreal\\\\v1\\\\sofDev_KMITL_SQ\\\\pages\\\\users\\\\MyShop\\\\index.vue",
+    "chunkName": "pages/users/MyShop/index",
+    "_name": "_2115d328"
+  },
+  {
     "name": "users-Newpass",
     "path": "/users/Newpass",
     "component": "C:\\\\Users\\\\Bravo\\\\Desktop\\\\SofDev\\\\kmitlNuxtJS\\\\Isreal\\\\v1\\\\sofDev_KMITL_SQ\\\\pages\\\\users\\\\Newpass.vue",
     "chunkName": "pages/users/Newpass",
     "_name": "_185cc009"
+  },
+  {
+    "name": "users-Order",
+    "path": "/users/Order",
+    "component": "C:\\\\Users\\\\Bravo\\\\Desktop\\\\SofDev\\\\kmitlNuxtJS\\\\Isreal\\\\v1\\\\sofDev_KMITL_SQ\\\\pages\\\\users\\\\Order\\\\index.vue",
+    "chunkName": "pages/users/Order/index",
+    "_name": "_fd3ecac8"
+  },
+  {
+    "name": "users-OrderShop",
+    "path": "/users/OrderShop",
+    "component": "C:\\\\Users\\\\Bravo\\\\Desktop\\\\SofDev\\\\kmitlNuxtJS\\\\Isreal\\\\v1\\\\sofDev_KMITL_SQ\\\\pages\\\\users\\\\OrderShop\\\\index.vue",
+    "chunkName": "pages/users/OrderShop/index",
+    "_name": "_bf1e0e74"
+  },
+  {
+    "name": "users-Post",
+    "path": "/users/Post",
+    "component": "C:\\\\Users\\\\Bravo\\\\Desktop\\\\SofDev\\\\kmitlNuxtJS\\\\Isreal\\\\v1\\\\sofDev_KMITL_SQ\\\\pages\\\\users\\\\Post.vue",
+    "chunkName": "pages/users/Post",
+    "_name": "_a1c85a10"
+  },
+  {
+    "name": "users-profile",
+    "path": "/users/profile",
+    "component": "C:\\\\Users\\\\Bravo\\\\Desktop\\\\SofDev\\\\kmitlNuxtJS\\\\Isreal\\\\v1\\\\sofDev_KMITL_SQ\\\\pages\\\\users\\\\profile.vue",
+    "chunkName": "pages/users/profile",
+    "_name": "_3002a821"
   },
   {
     "name": "users-Regis",
@@ -84,11 +154,32 @@
     "_name": "_2bf853a0"
   },
   {
+    "name": "users-ShopUser",
+    "path": "/users/ShopUser",
+    "component": "C:\\\\Users\\\\Bravo\\\\Desktop\\\\SofDev\\\\kmitlNuxtJS\\\\Isreal\\\\v1\\\\sofDev_KMITL_SQ\\\\pages\\\\users\\\\ShopUser\\\\index.vue",
+    "chunkName": "pages/users/ShopUser/index",
+    "_name": "_72e300a9"
+  },
+  {
     "name": "users-test",
     "path": "/users/test",
     "component": "C:\\\\Users\\\\Bravo\\\\Desktop\\\\SofDev\\\\kmitlNuxtJS\\\\Isreal\\\\v1\\\\sofDev_KMITL_SQ\\\\pages\\\\users\\\\test.vue",
     "chunkName": "pages/users/test",
     "_name": "_39c7d1ca"
+  },
+  {
+    "name": "users-testpost",
+    "path": "/users/testpost",
+    "component": "C:\\\\Users\\\\Bravo\\\\Desktop\\\\SofDev\\\\kmitlNuxtJS\\\\Isreal\\\\v1\\\\sofDev_KMITL_SQ\\\\pages\\\\users\\\\testpost.vue",
+    "chunkName": "pages/users/testpost",
+    "_name": "_444f9d2c"
+  },
+  {
+    "name": "users-MyShop-Edit",
+    "path": "/users/MyShop/Edit",
+    "component": "C:\\\\Users\\\\Bravo\\\\Desktop\\\\SofDev\\\\kmitlNuxtJS\\\\Isreal\\\\v1\\\\sofDev_KMITL_SQ\\\\pages\\\\users\\\\MyShop\\\\Edit.vue",
+    "chunkName": "pages/users/MyShop/Edit",
+    "_name": "_65e5af44"
   },
   {
     "name": "index",

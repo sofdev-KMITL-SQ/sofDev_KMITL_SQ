@@ -2,7 +2,7 @@
   <v-container fluid="xs" style="background-color: white">
     <v-container>
       <p class="display-2 black--text font-weight-light text-center pa-4">
-        การจัดส่ง
+        SHIPPING
       </p>
 
       <v-card color="grey" class="ma-3">
@@ -60,7 +60,7 @@
               <td class="text-right pa-2">
                 <v-checkbox
                   @click="resetForm"
-                  v-model="payDes"
+                  v-model="kmitlDes"
                   style="background-color: #121235"
                   :label="`นัดรับที่สถาบัน`"
                   value="นัดรับที่สถาบัน"
@@ -75,7 +75,7 @@
                   :items="itemsAddress"
                   dense
                   filled
-                  :disabled="!payDes"
+                  :disabled="!kmitlDes"
                   label="Address"
                 ></v-autocomplete>
                 <!-- <p>{{value}}</p> -->
@@ -86,7 +86,7 @@
                   :items="itemsTime"
                   dense
                   filled
-                  :disabled="!payDes"
+                  :disabled="!kmitlDes"
                   label="Time"
                   
                 ></v-autocomplete>
@@ -132,7 +132,7 @@
                         <v-col cols="12" sm="6">
                           <v-text-field
                             v-model="form.first"
-                            :disabled="payDes"
+                            :disabled="kmitlDes"
                             :rules="rules.name"
                             color="rgb(243, 95, 16)"
                             label="First name"
@@ -143,7 +143,7 @@
                           <v-text-field
                             v-model="form.last"
                             :rules="rules.name"
-                            :disabled="payDes"
+                            :disabled="kmitlDes"
                             color="rgb(243, 95, 16)"
                             label="Last name"
                             required
@@ -153,7 +153,7 @@
                           <v-textarea
                             v-model="form.address"
                             :rules="rules.address"
-                            :disabled="payDes"
+                            :disabled="kmitlDes"
                             color="rgb(243, 95, 16)"
                             label="Address"
                             required
@@ -161,12 +161,36 @@
                             <template v-slot:label> </template>
                           </v-textarea>
                         </v-col>
+                         
 
                         <v-col cols="12" sm="6"> </v-col>
                       </v-row>
+                      
                     </v-container>
+
                   </v-form>
+                  
                 </v-card>
+
+
+                 <v-card
+                 flat
+                  class="ml-3 pl-3 mt-3"
+                  style="background-color: rgb(255, 162, 22)"
+                 
+                 >
+                          <v-col cols="12" sm="6">
+                          <v-text-field
+                            v-model="form.contact"
+                            :rules="rules.contact"
+                        
+                            color="white"
+                            label="contact (ID LINE, Phone Number etc.)" 
+                            required
+                          ></v-text-field>
+                        </v-col>
+                          
+                          </v-card>
                 <!-- <v-checkbox
                 v-model="selected"
                 label="ส่งปลายทาง textFiled"
@@ -195,7 +219,7 @@
           <v-btn depressed color="error" text @click="resetForm"> Reset </v-btn>
 
           <v-btn
-            :disabled="!formIsValid & (valueAddress == null || valueTime == null)"
+            :disabled="!formIsValid & (valueAddress == null || valueTime == null || !ContraceIsValid)   "
             text
             color="primary"
             href="/Shipping/Paying"
@@ -260,6 +284,7 @@ export default {
       first: "",
       last: "",
       address: "",
+      contact:"",
           });
 
     return {
@@ -267,12 +292,14 @@ export default {
       rules: {
         name: [(val) => (val || "").length > 0 || "This field is required"],
         address: [(val) => (val || "").length > 0 || "This field is required"],
+        contact: [(val) => (val || "").length > 9 || "This field is required"],
       },
+      contact: null,
       conditions: false,
       content: "ยอมรับมา...",
       snackbar: false,
       defaultForm,
-      payDes: false,
+      kmitlDes: false,
       itemsAddress: [
         "Zone-A-โรงพระเทพ",
         "Zone-A-อาคารวิจัยนาโนเทคโนโลยี",
@@ -307,7 +334,10 @@ export default {
 
   computed: {
     formIsValid() {
-      return this.form.first && this.form.last && this.form.address;
+      return this.form.first && this.form.last && this.form.address && this.form.contact;
+    },
+    ContraceIsValid() {
+      return this.form.contact;
     },
   },
 

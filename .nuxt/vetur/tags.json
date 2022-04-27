@@ -5,28 +5,46 @@
   "Cart": {
     "description": "Auto imported from components/Cart.vue"
   },
+  "CreatePost": {
+    "description": "Auto imported from components/CreatePost.vue"
+  },
+  "EditMyShop": {
+    "description": "Auto imported from components/EditMyShop.vue"
+  },
   "Home": {
     "description": "Auto imported from components/Home.vue"
   },
   "Layout": {
     "description": "Auto imported from components/Layout.vue"
   },
-  "Line": {
-    "description": "Auto imported from components/Line.vue"
+  "MyOrder": {
+    "description": "Auto imported from components/MyOrder.vue"
+  },
+  "MyShop": {
+    "description": "Auto imported from components/MyShop.vue"
+  },
+  "OrderShop": {
+    "description": "Auto imported from components/OrderShop.vue"
+  },
+  "OrderUser": {
+    "description": "Auto imported from components/OrderUser.vue"
   },
   "Paying": {
     "description": "Auto imported from components/Paying.vue"
   },
-  "Post": {
-    "description": "Auto imported from components/Post.vue"
-  },
   "Product": {
     "description": "Auto imported from components/Product.vue"
+  },
+  "Review": {
+    "description": "Auto imported from components/Review.vue"
   },
   "Shipping": {
     "description": "Auto imported from components/Shipping.vue"
   },
   "Shop": {
     "description": "Auto imported from components/Shop.vue"
+  },
+  "ShopUser": {
+    "description": "Auto imported from components/ShopUser.vue"
   }
 }
