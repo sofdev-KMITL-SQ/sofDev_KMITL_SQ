@@ -2,25 +2,47 @@ const userModel = require('../models/userModel')
 const jwt = require('jsonwebtoken') 
 const bcrypt = require('bcryptjs')
 const asyncHandle = require('express-async-handler')
+// const multer = require('multer')
+
+
+// //! ใช้ระบุตำแหน่งจัดเก็บไฟล์
+// const storage = multer.diskStorage({  
+//     destination:function(req,file,cb){  //* ระบุที่ตน ที่จะจัดเก็บไฟล์
+//         cb(null,'./images/Users')
+//     },
+//     filename:function(req,file,cb){  //* เปลี่ยนชื่อไฟล์ โดยเปลี่ยนเป็นเวลา ป้องกันการซ้ำกัน ชนิดไฟล์ jpg
+//         cb(null,Date.now()+".jpg")
+//     }
+// })
+
+// //! อัพโหลดไฟล์ 
+// const upload = multer({
+//     storage:storage
+// })
+
+
+
+
 
 // @desc       register new user
 // @route      POST /api/user
 // @access     Public
 const registerUser = asyncHandle (async (req,res)=>{
 
-    const {userID,userName,
+    const {userName,
         userSurename,userEmail,
         userPassword,userAddress,
         userProfilePic,userDescription,
         userInterest,userTel
     } = req.body
 
-    if(!userID||!userName
+    if(!userName
         ||!userSurename||!userEmail
         ||!userPassword||!userAddress
-        ||!userProfilePic||!userDescription
-        ||!userInterest||!userTel){
+        ||!userDescription||!userInterest||!userTel){
             res.status(400)
+            console.log(req.body);
+            
             throw new Error("Please enter all data of USER !!")
         }
 
@@ -40,13 +62,13 @@ const registerUser = asyncHandle (async (req,res)=>{
 
     //? create user 1 อัน ไปใส่ใน DB
     const registerUser = await userModel.create({
-        userID: req.body.userID,
         userName: req.body.userName,
         userSurename: req.body.userSurename,
         userEmail: req.body.userEmail,
         userPassword: hashPassword,   //* hashed password (เข้ารหัสข้อมูล)
         userAddress: req.body.userAddress,
-        userProfilePic: req.body.userProfilePic,
+        // userProfilePic: req.body.userProfilePic,
+        userProfilePic: req.file.filename,
         userDescription: req.body.userDescription,
         userInterest: req.body.userInterest,
         userTel:req.body.userTel
@@ -56,7 +78,6 @@ const registerUser = asyncHandle (async (req,res)=>{
     if(registerUser){   //* เช็คชัวว่า registerUser ทำงานได้จริง ส่ง 201 คือ create success
         res.status(201).json({ 
             _id: registerUser.id,  //* ส่งข้อมูลกลับมาบางส่วนก็ได้
-            userID: registerUser.userID,
             userEmail: registerUser.userEmail,
             token: generateToken(registerUser._id)   //? ให้ส่ง token กลับไปด้วย
         })
@@ -86,7 +107,7 @@ const loginUser = asyncHandle (async(req,res)=>{
         res.json({
             _id: userlogin_email.id,  //* ส่งข้อมูลกลับมาบางส่วนก็ได้
             userEmail: userlogin_email.userEmail,
-            token: generateToken(userlogin_email._id), 
+            token: generateToken(userlogin_email._id) 
         })
     }else{
         res.status(400)
@@ -146,7 +167,8 @@ const updateUser = asyncHandle(async(req,res)=>{
         userName: req.body.userName,
         userSurename: req.body.userSurename,
         userAddress: req.body.userAddress,
-        userProfilePic: req.body.userProfilePic,
+        // userProfilePic: req.body.userProfilePic,
+        userProfilePic: req.file.filename,
         userDescription: req.body.userDescription,
         userInterest: req.body.userInterest,
     })
@@ -202,5 +224,5 @@ module.exports = {
     loginUser,
     getUser,
     updateUser,
-    deleteUser,
+    deleteUser
 }

@@ -5,6 +5,7 @@ const port = process.env.PORT || 3300
 const colors =require('colors')
 const {errorHandler} = require('./middleware/errorMIddleware')
 const connectDB = require('./config/db')
+const router = require('./routes/shopRoute')
 // dotenv.config( { path : 'config.env'} )
 
 connectDB()
@@ -19,17 +20,12 @@ app.use(function(req, res, next) {
     next();
   });
 
-// app.use((req,res,next)=>{
-//     res.header('Access-Control-Allow-Origin','*');
-//     res.header('Access-Control-Allow-Headers','Origin,X-Requested-With,Content-Type,Accept');
-//     next();
-// })
-
 
 app.use('/api/index',require('./routes/indexRoute'))
 app.use('/api/user',require('./routes/userRoute'))
 app.use('/api/cart',require('./routes/cartRoute'))
-
+app.use('/api/orders', require('./routes/orderRoutes'))
+app.use(router)
 
 app.use(errorHandler)  //? จัดการ error
 

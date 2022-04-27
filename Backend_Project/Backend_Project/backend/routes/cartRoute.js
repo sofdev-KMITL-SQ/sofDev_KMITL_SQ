@@ -6,7 +6,7 @@ const {protect} = require('../middleware/authenMiddleware')
 
 router.post('/user/cart-add',protect,addProduct_tocart);
 router.delete('/delete-allcart',protect,delete_allCart);
-router.put('/user/cart-delete',protect,deleteProduct_tocart)
+router.post('/user/cart-delete',protect,deleteProduct_tocart)
 
 
 module.exports = router

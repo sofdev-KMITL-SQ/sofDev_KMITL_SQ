@@ -4,7 +4,7 @@
 <form @submit.prevent="createPost">
 <button type="submit"  value="Submit" class="cancelbtn" ><h3 style="color:white">Login</h3></button>
   <v-text-field v-model="formData.userEmail" label="Email" placeholder="ex: 6x0xxxxx@kmitl.ac.th" type="text" pattern="[6]{1}[0-4]{1}[0]{1}[1-9]{1}[0-9]{4}@kmitl\.ac\.th" required></v-text-field>
- <v-text-field v-model="formData.userPassword" label="Password" type="password" placeholder="Between 8 -  20 Characters" id="password" minlength="8" maxlength="20" required><br><br></v-text-field>
+ <v-text-field v-model="formData.userPassword" label="Password" type="password" placeholder="Between 4 -  10 Characters" id="password" minlength="4" maxlength="10" required><br><br></v-text-field>
  
 <div class="box Hog" ><h1 style="color:white">Login</h1></div>
 <!-- <v-if "{{res.token}} =! {{null}}" ><h1>Hello {{res.token}}</h1></v-if>
@@ -56,13 +56,10 @@ export default {
           // this.id = response.data.userID
           // this.email = response.data.userEmail
            this.res = response.data
-
            this.pass =JSON.parse(window.localStorage.getItem('user'));
           //  const user = JSON.parse(localStorage.getItem('user'))
           //  var Ldata = window.localStorage.getItem("user");
            window.location.href = "../Home"
-
-
         })
         .catch((error) => {
           console.log(error)
@@ -130,4 +127,3 @@ export default {
         position: absolute;
     }
 </style>
-
